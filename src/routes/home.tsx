@@ -1,12 +1,4 @@
-import React, { FC, Fragment } from 'react'
-import { Popover, Transition } from '@headlessui/react'
-import { MenuIcon, XIcon } from '@heroicons/react/outline'
-
-const navigation = [
-  { name: 'Donation', href: '#' },
-  { name: 'War news', href: '#' },
-  { name: 'QnA', href: '#' },
-]
+import React, { FC } from 'react'
 
 const Home: FC = () => {
   // view
