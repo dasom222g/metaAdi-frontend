@@ -1,3 +1,7 @@
 {
-  "hello": "Hello world"
+  "hello": "Hello world",
+  "home": "Home",
+  "donation": "Donation",
+  "war_news": "War News",
+  "qna": "QnA"
 }

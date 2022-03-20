@@ -14,9 +14,9 @@ const Header = () => {
   }
 
   const navigation = [
-    { name: t('hello'), href: '#' },
-    { name: 'War news', href: '#' },
-    { name: 'QnA', href: '#' },
+    { name: t('donation'), href: '#' },
+    { name: t('war_news'), href: '#' },
+    { name: t('qna'), href: '#' },
   ]
 
   useEffect(() => {

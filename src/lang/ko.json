@@ -1,3 +1,7 @@
 {
-  "hello": "안녕하세요"
+  "hello": "안녕하세요",
+  "home": "홈",
+  "donation": "기부하기",
+  "war_news": "전쟁 뉴스",
+  "qna": "QnA"
 }
