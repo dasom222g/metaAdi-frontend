@@ -11,17 +11,17 @@ module.exports = {
       '70%': '70%',
       '80%': '80%',
     },
-    // colors: {
-    //   // blue: {
-    //   //   light: '#000',
-    //   //   DEFAULT: '#ff49db',
-    //   //   dark: '#ff16d1',
-    //   // },
-    // },
     extend: {
       colors: {
         'blue-aid': '#BED5FC',
-      }
+      },
+      minHeight: {
+        '0': '0',
+        '1/4': '25%',
+        '1/2': '50%',
+        '3/4': '75%',
+        'full': '100%',
+      },
     },
   },
   variants: {
