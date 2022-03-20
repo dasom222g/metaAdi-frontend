@@ -11,7 +11,18 @@ module.exports = {
       '70%': '70%',
       '80%': '80%',
     },
-    extend: {},
+    // colors: {
+    //   // blue: {
+    //   //   light: '#000',
+    //   //   DEFAULT: '#ff49db',
+    //   //   dark: '#ff16d1',
+    //   // },
+    // },
+    extend: {
+      colors: {
+        'blue-aid': '#BED5FC',
+      }
+    },
   },
   variants: {
     extend: {
