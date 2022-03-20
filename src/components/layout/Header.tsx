@@ -1,14 +1,27 @@
 import { Popover, Transition } from '@headlessui/react'
 import { MenuIcon, XIcon } from '@heroicons/react/outline'
-import React, { Fragment } from 'react'
-
-const navigation = [
-  { name: 'Donation', href: '#' },
-  { name: 'War news', href: '#' },
-  { name: 'QnA', href: '#' },
-]
+import React, { Fragment, useEffect, useState } from 'react'
+import { useTranslation } from 'react-i18next'
+import { languages, Languages, initLanguage } from '../../lang/i18n'
 
 const Header = () => {
+  const { t, i18n } = useTranslation()
+  const [ lang, setLang ] = useState<Languages>(languages.find(lang => lang !== initLanguage)!)
+
+  const handleChangeLanguage = (lang: Languages) => {
+    setLang(languages.find(item => item !== lang)!)
+    i18n.changeLanguage(lang)
+  }
+
+  const navigation = [
+    { name: t('hello'), href: '#' },
+    { name: 'War news', href: '#' },
+    { name: 'QnA', href: '#' },
+  ]
+
+  useEffect(() => {
+    console.log('initLanguage', initLanguage)
+  }, [])
   return (
     <Popover>
       <div className="pt-6 px-4 sm:px-6 lg:px-8 fixed top-0 left-0 right-0  z-20 bg-blue-aid">
@@ -49,6 +62,9 @@ const Header = () => {
               className="font-medium text-indigo-600 hover:text-indigo-500"
             >
               Log in
+            </button>
+            <button key={lang} onClick={() => handleChangeLanguage(lang)}>
+              {t(`${lang}`)}
             </button>
           </div>
         </nav>
