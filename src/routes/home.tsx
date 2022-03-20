@@ -1,6 +1,8 @@
 import React, { FC } from 'react'
+import { useTranslation } from 'react-i18next'
 
 const Home: FC = () => {
+  const { t } = useTranslation()
   // view
   return (
     <div className="relative bg-blue-aid overflow-hidden">
@@ -20,15 +22,13 @@ const Home: FC = () => {
           <main className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 mt-0">
             <div className="sm:text-center lg:text-left">
               <h1 className="text-4xl tracking-tight font-extrabold text-gray-900 sm:text-5xl md:text-6xl">
-                <span className="block xl:inline">Data to enrich your</span>{' '}
+                <span className="block xl:inline">{t('hero.main_title_first')}</span>{' '}
                 <span className="block text-indigo-600 xl:inline">
-                  online business
+                {t('hero.main_title_second')}
                 </span>
               </h1>
               <p className="mt-3 text-base text-gray-500 sm:mt-5 sm:text-lg sm:max-w-xl sm:mx-auto md:mt-5 md:text-xl lg:mx-0">
-                Anim aute id magna aliqua ad ad non deserunt sunt. Qui irure qui
-                lorem cupidatat commodo. Elit sunt amet fugiat veniam occaecat
-                fugiat aliqua.
+                {t('hero.sub_title')}
               </p>
               <div className="mt-5 sm:mt-8 sm:flex sm:justify-center lg:justify-start">
                 <div className="rounded-md shadow">
