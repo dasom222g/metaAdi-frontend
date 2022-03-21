@@ -1,16 +1,17 @@
+@import './common.scss';
+@import './variables.scss';
+
 .custom-shape-divider-bottom-1647846273 {
   width: 100%;
   overflow: hidden;
   line-height: 0;
-}
-
-.custom-shape-divider-bottom-1647846273 svg {
-  position: relative;
-  display: block;
-  width: calc(113% + 1.3px);
-  height: 80px;
-}
-
-.custom-shape-divider-bottom-1647846273 .shape-fill {
-  fill: #BED5FC;
+  svg {
+    position: relative;
+    display: block;
+    width: calc(113% + 1.3px);
+    height: 40px;
+  }
+  .shape-fill {
+    fill: $white;
+  }
 }

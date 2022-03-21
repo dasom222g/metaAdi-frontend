@@ -14,11 +14,12 @@ module.exports = {
     extend: {
       colors: {
         'aid-blue': '#BED5FC',
-        'aid-blue-sky': '#91E5FF',
-        'aid-blue-light': '#BED5FC',
-        'aid-mint': '#BED5FC',
-        'aid-green': '#BED5FC',
-        'aid-yello': '#BED5FC',
+        'aid-purple': '#4738BB',
+        'aid-light-purple': '#DCB8FF',
+        'aid-yellow': '#F9F871',
+        'aid-light-pink': '#F7EBFF',
+        'aid-light-blue': '#C6FCED',
+        'aid-red': '#ED3B38',
       },
       minHeight: {
         '0': '0',
