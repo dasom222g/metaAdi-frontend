@@ -1,0 +1,81 @@
+import React from 'react'
+import { useTranslation } from 'react-i18next'
+
+const Hero = () => {
+  const { t } = useTranslation()
+  return (
+    <div className="relative bg-aid-blue overflow-hidden">
+      <div className="custom-shape-divider-bottom-1647846273 bg-indigo-900">
+        <div className="relative">
+          <div className="max-w-7xl mx-auto">
+            <div className="relative z-10 py-8 md:pb-20 lg:max-w-2xl lg:w-full lg:pb-28 xl:pb-32">
+              {/* <svg
+                className="hidden lg:block absolute right-0 inset-y-0 h-full w-48 text-aid-blue transform translate-x-1/2"
+                fill="currentColor"
+                viewBox="0 0 100 100"
+                preserveAspectRatio="none"
+                aria-hidden="true"
+              >
+                <polygon points="50,0 100,0 50,100 0,100" />
+              </svg> */}
+
+              <main className="mx-auto max-w-7xl px-4 lg:px-8 mt-0">
+                <div className="lg:text-left">
+                  <h1 className="text-4xl tracking-tight font-extrabold text-white md:text-5xl">
+                    <span className="block xl:inline">
+                      {t('hero.main_title_first')}
+                    </span>{' '}
+                    <span className="block text-aid-blue-sky xl:inline mt-2">
+                      {t('hero.main_title_second')}
+                    </span>
+                  </h1>
+                  <p className="mt-3 text-base text-white md:mt-5 md:text-lg lg:mx-0">
+                    {t('hero.sub_title')}
+                  </p>
+                  <div className="mt-5 md:mt-8 md:flex md:justify-center lg:justify-start">
+                    {/* <div className="rounded-md shadow">
+                      <button
+                        type="button"
+                        className="w-full flex items-center justify-center px-8 py-3 border border-transparent text-base font-medium rounded-md text-white bg-indigo-600 hover:bg-indigo-700 md:py-4 md:text-lg md:px-10"
+                      >
+                        {t('donation')}
+                      </button>
+                    </div> */}
+                    <div className="mt-3">
+                      <button
+                        type="button"
+                        className="w-full flex items-center justify-center px-8 py-3 border border-transparent text-base rounded-md text-indigo-700 font-extrabold bg-indigo-200 hover:bg-white md:py-4 md:text-lg md:px-10"
+                      >
+                        {t('donation')}
+                      </button>
+                    </div>
+                  </div>
+                </div>
+              </main>
+            </div>
+          </div>
+          <div className="lg:absolute lg:inset-y-0 lg:right-0 lg:w-1/2 pt-4">
+            <img
+              className="h-56 w-full md:h-96 lg:w-full lg:h-full"
+              src="./images/hero_icon.svg"
+              alt="donation crytocurrency"
+            />
+          </div>
+        </div>
+        <svg
+          data-name="Layer 1"
+          xmlns="http://www.w3.org/2000/svg"
+          viewBox="0 0 1200 120"
+          preserveAspectRatio="none"
+        >
+          <path
+            d="M985.66,92.83C906.67,72,823.78,31,743.84,14.19c-82.26-17.34-168.06-16.33-250.45.39-57.84,11.73-114,31.07-172,41.86A600.21,600.21,0,0,1,0,27.35V120H1200V95.8C1132.19,118.92,1055.71,111.31,985.66,92.83Z"
+            className="shape-fill"
+          ></path>
+        </svg>
+      </div>
+    </div>
+  )
+}
+
+export default Hero

@@ -13,7 +13,12 @@ module.exports = {
     },
     extend: {
       colors: {
-        'blue-aid': '#BED5FC',
+        'aid-blue': '#BED5FC',
+        'aid-blue-sky': '#91E5FF',
+        'aid-blue-light': '#BED5FC',
+        'aid-mint': '#BED5FC',
+        'aid-green': '#BED5FC',
+        'aid-yello': '#BED5FC',
       },
       minHeight: {
         '0': '0',

@@ -24,7 +24,7 @@ const Header = () => {
   }, [])
   return (
     <Popover>
-      <div className="pt-6 px-4 sm:px-6 lg:px-8 fixed top-0 left-0 right-0  z-20 bg-blue-aid">
+      <div className="pt-6 px-4 sm:px-6 lg:px-8 fixed top-0 left-0 right-0  z-20 bg-aid-blue">
         <nav
           className="relative flex items-center justify-between sm:h-10 lg:justify-start"
           aria-label="Global"
