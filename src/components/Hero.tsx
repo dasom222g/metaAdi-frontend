@@ -8,16 +8,6 @@ const Hero = () => {
       <div className="custom-shape-divider-bottom-1647846273">
         <div className="max-w-7xl mx-auto">
           <div className="relative z-10 py-8 md:pb-20 lg:max-w-2xl lg:w-full lg:py-24">
-            {/* <svg
-              className="hidden lg:block absolute right-0 inset-y-0 h-full w-48 text-aid-blue transform translate-x-1/2"
-              fill="currentColor"
-              viewBox="0 0 100 100"
-              preserveAspectRatio="none"
-              aria-hidden="true"
-            >
-              <polygon points="50,0 100,0 50,100 0,100" />
-            </svg> */}
-
             <main className="mx-auto max-w-7xl px-4 lg:px-8 mt-0">
               <div className="lg:text-left">
                 <h1 className="text-4xl tracking-tight font-extrabold text-white md:text-5xl">
