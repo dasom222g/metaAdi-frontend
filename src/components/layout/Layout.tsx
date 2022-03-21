@@ -8,13 +8,13 @@ interface LayoutProps {
 
 const Layout: FC<LayoutProps> = ({children}) => {
   return (
-    <>
+    <div className="wrap">
       <Header />
-      <main className="pt-28 min-h-3/4">
+      <main className="pt-24 min-h-3/4">
         {children}
       </main>
       <Footer />
-    </>
+    </div>
   )
 }
 
