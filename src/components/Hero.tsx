@@ -4,7 +4,7 @@ import { useTranslation } from 'react-i18next'
 const Hero = () => {
   const { t } = useTranslation()
   return (
-    <div className="relative overflow-hidden bg-aid-purple">
+    <div className="relative overflow-hidden bg-aid-purple -mx-2 md:-mx-6">
       <div className="custom-shape-divider-bottom-1647846273">
         <div className="max-w-7xl mx-auto">
           <div className="relative z-10 py-8 md:pb-20 lg:max-w-2xl lg:w-full lg:py-24">

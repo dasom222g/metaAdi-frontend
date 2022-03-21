@@ -3,7 +3,7 @@ import React from 'react'
 
 const Header = () => {
   return (
-    <footer className="py-6 px-4 sm:px-6 lg:px-8">
+    <footer className="py-6 px-4 sm:px-6 lg:px-8 mt-auto">
       <p>Powered by somi</p>
     </footer>
   )
