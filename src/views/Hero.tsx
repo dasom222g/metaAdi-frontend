@@ -1,7 +1,8 @@
-import React from 'react'
+import React, { FC } from 'react'
 import { useTranslation } from 'react-i18next'
+import Button from '../components/Button'
 
-const Hero = () => {
+const Hero:FC = () => {
   const { t } = useTranslation()
   return (
     <div className="relative overflow-hidden bg-aid-purple -mx-2 md:-mx-6">
@@ -30,14 +31,7 @@ const Hero = () => {
                       {t('donation')}
                     </button>
                   </div> */}
-                  <div className="mt-3">
-                    <button
-                      type="button"
-                      className="w-full flex items-center justify-center px-8 py-3 border border-transparent text-base rounded-md text-indigo-700 font-extrabold bg-indigo-100 hover:bg-indigo-300 md:py-4 md:text-lg md:px-10 transition-all duration-300"
-                    >
-                      {t('donation')}
-                    </button>
-                  </div>
+                  <Button title={t('donation')} />
                 </div>
               </div>
             </main>
