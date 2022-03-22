@@ -4,7 +4,6 @@ import TitleBox from '../components/TitleBox'
 
 const Why = () => {
   const { t } = useTranslation()
-  
 
   return (
     <>
