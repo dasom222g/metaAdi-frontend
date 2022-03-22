@@ -8,7 +8,7 @@ const Why = () => {
 
   return (
     <>
-      <TitleBox mainTitle={t('main.why_donate')} subTitle={t('main.ukraine_midst')} />
+      <TitleBox mainTitle={t('main.why_donate')} subTitle={t('main.ukraine_midst')} align={'center'} />
     </>
   )
 }

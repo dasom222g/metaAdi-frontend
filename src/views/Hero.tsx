@@ -8,7 +8,7 @@ const Hero:FC = () => {
     <div className="relative overflow-hidden bg-aid-purple -mx-2 md:-mx-6">
       <div className="custom-shape-divider-bottom-1647846273">
         <div className="max-w-7xl mx-auto">
-          <div className="relative z-10 py-8 md:pb-20 lg:max-w-2xl lg:w-full lg:py-24">
+          <div className="relative z-10 py-8 md:pb-20 lg:max-w-2xl lg:w-full lg:py-20">
             <main className="mx-auto max-w-7xl px-4 lg:px-8 mt-0">
               <div className="lg:text-left">
                 <h1 className="text-4xl tracking-tight font-extrabold text-white md:text-5xl">
@@ -19,18 +19,10 @@ const Hero:FC = () => {
                     {t('hero.main_title_second')}
                   </span>
                 </h1>
-                <p className="mt-3 text-base text-white md:mt-5 md:text-lg lg:mx-0">
+                <p className="mt-6 text-base text-white md:mt-8 md:text-lg lg:mx-0">
                   {t('hero.sub_title')}
                 </p>
-                <div className="mt-5 md:mt-8 md:flex md:justify-center lg:justify-start">
-                  {/* <div className="rounded-md shadow">
-                    <button
-                      type="button"
-                      className="w-full flex items-center justify-center px-8 py-3 border border-transparent text-base font-medium rounded-md text-white bg-indigo-600 hover:bg-indigo-700 md:py-4 md:text-lg md:px-10"
-                    >
-                      {t('donation')}
-                    </button>
-                  </div> */}
+                <div className="md:flex md:justify-center lg:justify-start">
                   <Button title={t('donation')} />
                 </div>
               </div>
