@@ -1,25 +1,7 @@
-export interface IVotingCadidates {
-  candidate: string,
-  count: number
+const enum Align {
+  left,
+  center,
+  right
 }
 
-export interface ICandidate {
-  id?: number
-  name: string
-  description: string
-  imageName: string
-}
-
-export interface ICandidateNoId {
-  name: string
-  subText: string
-  description: string
-  imageName: string
-}
-
-export interface ICountItem {
-  id: number
-  name: string
-  imageName?: string
-  count: number
-}
+export type AlignType = keyof typeof Align
