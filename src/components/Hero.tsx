@@ -11,10 +11,10 @@ const Hero = () => {
             <main className="mx-auto max-w-7xl px-4 lg:px-8 mt-0">
               <div className="lg:text-left">
                 <h1 className="text-4xl tracking-tight font-extrabold text-white md:text-5xl">
-                  <span className="block xl:inline">
+                  <span className="block">
                     {t('hero.main_title_first')}
                   </span>{' '}
-                  <span className="block text-aid-blue xl:inline mt-2">
+                  <span className="block text-aid-blue mt-2">
                     {t('hero.main_title_second')}
                   </span>
                 </h1>
