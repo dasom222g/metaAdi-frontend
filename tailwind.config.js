@@ -28,6 +28,9 @@ module.exports = {
         '3/4': '75%',
         'full': '100%',
       },
+      margin: {
+        '30': '7.5rem',
+      },
     },
   },
   variants: {
