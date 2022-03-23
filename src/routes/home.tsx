@@ -8,7 +8,7 @@ const Home: FC = () => {
   return (
     <>
       <Hero />
-      <section className={style.sectionInterval}>
+      <section className={`${style.sectionInterval} bg-white`}>
         <Why />
       </section>
     </>
