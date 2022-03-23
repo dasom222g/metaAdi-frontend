@@ -6,6 +6,8 @@ import './assets/style/pages.scss'
 import Donation from './routes/donation'
 import WarNews from './routes/war-news'
 import QnA from './routes/qna'
+import DonationSuccess from './routes/donation-success'
+import Wallteconnect from './routes/wallet-connect'
 
 const App: FC = () => {
 
@@ -15,6 +17,8 @@ const App: FC = () => {
         <Routes>
           <Route path="/" element={<Home />} />
           <Route path="/donation" element={<Donation />} />
+          <Route path="/donation/success" element={<DonationSuccess />} />
+          <Route path="/wallet-connect" element={<Wallteconnect />} />
           <Route path="/war-news" element={<WarNews />} />
           <Route path="/qna" element={<QnA />} />
         </Routes>
