@@ -1,3 +1,3 @@
 export const style = {
-  sectionInterval: 'mt-6 md:mt-22'
+  sectionInterval: 'pt-6 md:pt-22 -mx-4 md:-mx-8'
 }
