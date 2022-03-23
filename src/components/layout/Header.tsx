@@ -99,12 +99,12 @@ const Header = () => {
                     </Link>
                   ))}
                 </div>
-                <button
+                {/* <button
                   type="button"
                   className="block w-full px-5 py-3 text-center font-medium text-indigo-600 bg-gray-50 hover:bg-gray-100"
                 >
                   Log in
-                </button>
+                </button> */}
               </div>
             </Popover.Panel>
           </Transition>
