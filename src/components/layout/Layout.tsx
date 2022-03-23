@@ -11,7 +11,7 @@ const Layout: FC<LayoutProps> = ({children}) => {
     <div className="wrap">
       <Header />
       <div className="min-h-screen flex flex-col">
-        <main className="pt-24 px-2 md:px-6">
+        <main className="pt-18 md:pt-22 px-4 md:px-8">
           {children}
         </main>
         <Footer />

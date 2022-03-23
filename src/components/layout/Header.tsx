@@ -25,49 +25,51 @@ const Header = () => {
   }, [])
   return (
     <Popover>
-      <div className="py-7 px-4 sm:px-6 lg:px-8 fixed top-0 left-0 right-0 z-20 bg-aid-purple">
+      <div className="py-4 px-4 md:py-6 md:px-8 fixed top-0 left-0 right-0 z-20 bg-aid-purple">
         <nav
-          className="relative flex items-center justify-between sm:h-10 lg:justify-start"
+          className="relative flex items-center justify-between"
           aria-label="Global"
         >
           <div className="flex items-center flex-grow flex-shrink-0 lg:flex-grow-0">
             <div className="flex items-center justify-between w-full md:w-auto">
               <Link to="/">
-                <span className="sr-only">Meta aid</span>
                 <img
-                  className="h-8 w-auto sm:h-10"
-                  src="./images/logo.svg"
+                  className="h-8 w-auto md:h-10"
+                  src="./images/logo_text.svg"
                   alt="Meta aid Logo"
                 />
+                <span className="sr-only">Meta aid</span>
               </Link>
-              <div className="-mr-2 flex items-center md:hidden">
+              {/* <div className="-mr-2 flex items-center md:hidden">
                 <Popover.Button className="rounded-md p-2 inline-flex items-center justify-center text-white">
                   <span className="sr-only">Open main menu</span>
                   <MenuIcon className="h-6 w-6" aria-hidden="true" />
                 </Popover.Button>
-              </div>
+              </div> */}
             </div>
           </div>
-          <div className="hidden md:block md:ml-10 md:pr-4 md:space-x-8">
+          <div className="hidden md:block md:ml-auto md:space-x-8">
             {navigation.map((item) => (
-              <Link key={item.name} to={item.link} className="font-medium text-white hover:text-aid-blue transition-all duration-300">
+              <Link key={item.name} to={item.link} className="font-bold text-lg text-white hover:text-aid-blue transition-all duration-300">
                 {item.name}
               </Link>
             ))}
-            {/* <button
-              type="button"
-              className="font-medium text-indigo-600 hover:text-indigo-500"
-            >
-              Log in
-            </button> */}
+          </div>
+          <div className="pr-2 md:pr-4">
             <button
               type="button"
-              className="font-medium text-white hover:text-aid-blue transition-all duration-300"
+              className="font-bold text-lg text-white hover:text-aid-blue transition-all duration-300 md:ml-8"
               key={lang}
               onClick={() => handleChangeLanguage(lang)}
             >
               {t(`${lang}`)}
             </button>
+          </div>
+          <div className="-mr-2 flex items-center md:hidden">
+            <Popover.Button className="rounded-md p-2 inline-flex items-center justify-center text-white">
+              <span className="sr-only">Open main menu</span>
+              <MenuIcon className="h-6 w-6" aria-hidden="true" />
+            </Popover.Button>
           </div>
           {/* START: mobile용 nav 내용 */}
           <Transition
@@ -92,7 +94,7 @@ const Header = () => {
                 </div>
                 <div className="px-2 pt-2 pb-3 space-y-1 bg-white bg-opacity-90">
                   {navigation.map((item) => (
-                    <Link key={item.name} to={item.link} className="block px-3 py-2 rounded-md text-base font-medium text-gray-700">
+                    <Link key={item.name} to={item.link} className="block px-3 py-2 rounded-md text-base font-bold text-gray-700">
                       {item.name}
                     </Link>
                   ))}
