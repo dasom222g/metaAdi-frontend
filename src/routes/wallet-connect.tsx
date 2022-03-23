@@ -8,7 +8,7 @@ const Wallteconnect = () => {
     <div className="h-full">
       <TitleBox mainTitle={t('wallet.connect_wallet')} subTitle={t('wallet.connect_with_one')} align={'center'} color={'white'} />
       <div>
-        <img className="max-h-52 md:max-h-60 mx-auto" src="./images/wallet.png" alt="wallet" />
+        <img className="max-h-52 md:max-h-60 mx-auto" src="./images/wallet.svg" alt="wallet" />
       </div>
     </div>
   )
