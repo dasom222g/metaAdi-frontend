@@ -7,12 +7,10 @@ import { languages, Languages, initLanguage } from '../../lang/i18n'
 
 const Header = () => {
   const { t, i18n } = useTranslation()
-  const [lang, setLang] = useState<Languages>(
-    languages.find((lang) => lang !== initLanguage)!
-  )
+  const [lang, setLang] = useState<Languages>(Object.values(languages).find(language => language !== initLanguage)!)
 
   const handleChangeLanguage = (lang: Languages) => {
-    setLang(languages.find((item) => item !== lang)!)
+    setLang(Object.values(languages).find(language => language !== lang)!)
     i18n.changeLanguage(lang)
   }
 

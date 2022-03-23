@@ -4,8 +4,11 @@ import { initReactI18next } from 'react-i18next'
 import tranEn from './en.json'
 import tranKo from './ko.json'
 
-export const languages = [ 'en', 'ko' ] as const
-export type Languages = typeof languages[number] // 'en' | 'ko'
+export const languages = {
+  english: 'en',
+  korean: 'ko',
+} as const
+export type Languages = typeof languages[keyof typeof languages] // 'en' | 'ko'
 
 const resources = {
   en: { translation: tranEn },
@@ -14,12 +17,12 @@ const resources = {
 
 // const userLanguage = window.navigator.language
 // export const initLanguage = localStorage.getItem('language') || userLanguage || 'en'
-export const initLanguage = 'en'
+export const initLanguage: Languages = languages.english
 
 i18n.use(initReactI18next).init({
   resources,
   lng: initLanguage,
-  fallbackLng: 'en',
+  fallbackLng: languages.english,
   keySeparator: false,
   interpolation: {
     escapeValue: false
