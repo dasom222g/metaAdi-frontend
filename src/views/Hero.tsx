@@ -2,7 +2,7 @@ import React, { FC } from 'react'
 import { useTranslation } from 'react-i18next'
 import Button from '../components/Button'
 
-const Hero:FC = () => {
+const Hero: FC = () => {
   const { t } = useTranslation()
   return (
     <div className="relative overflow-hidden bg-aid-purple -mx-4 md:-mx-8">
@@ -12,12 +12,8 @@ const Hero:FC = () => {
             <main className="mx-auto max-w-7xl px-4 md:px-8 mt-0">
               <div className="lg:text-left">
                 <h1 className="text-4xl tracking-tight font-extrabold text-white md:text-5xl">
-                  <span className="block">
-                    {t('hero.main_title_first')}
-                  </span>{' '}
-                  <span className="block text-aid-blue mt-2">
-                    {t('hero.main_title_second')}
-                  </span>
+                  <span className="block">{t('hero.main_title_first')}</span>{' '}
+                  <span className="block text-aid-blue mt-2">{t('hero.main_title_second')}</span>
                 </h1>
                 <p className="mt-6 text-base text-white md:mt-8 md:text-lg lg:mx-0">
                   {t('hero.sub_title')}
@@ -41,12 +37,10 @@ const Hero:FC = () => {
           xmlns="http://www.w3.org/2000/svg"
           viewBox="0 0 1200 120"
           preserveAspectRatio="none"
-          className="-mt-5 lg:-mt-0"
-        >
+          className="-mt-5 lg:-mt-0">
           <path
             d="M985.66,92.83C906.67,72,823.78,31,743.84,14.19c-82.26-17.34-168.06-16.33-250.45.39-57.84,11.73-114,31.07-172,41.86A600.21,600.21,0,0,1,0,27.35V120H1200V95.8C1132.19,118.92,1055.71,111.31,985.66,92.83Z"
-            className="shape-fill"
-          ></path>
+            className="shape-fill"></path>
         </svg>
       </div>
     </div>

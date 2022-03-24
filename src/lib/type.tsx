@@ -1,7 +1,7 @@
 const enum Align {
   left,
   center,
-  right
+  right,
 }
 
 export type AlignType = keyof typeof Align
@@ -12,7 +12,7 @@ export const enum Wallet {
 }
 
 export interface WalletType {
-  id: number,
-  type: keyof typeof Wallet,
+  id: number
+  type: keyof typeof Wallet
   title: string
 }

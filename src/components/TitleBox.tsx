@@ -9,12 +9,15 @@ interface TitleBoxProps {
   color?: string
 }
 
-const TitleBox:FC<TitleBoxProps> = ({mainTitle, subTitle, description, align, color}) => {
+const TitleBox: FC<TitleBoxProps> = ({ mainTitle, subTitle, description, align, color }) => {
   return (
-    <div className={`text-gray-800, text-${align} px-4 py-6 md:py-8 ${color ? 'text-' + color : ''}`}>
+    <div
+      className={`text-gray-800, text-${align} px-4 py-6 md:py-8 ${color ? 'text-' + color : ''}`}>
       <h2 className="title text-3xl tracking-tight font-black md:text-5xl">{mainTitle}</h2>
       <p className="sub-title text-lg md:text-2xl font-normal mt-6 md:mt-8">{subTitle}</p>
-      {description && <p className="sub-title text-base md:text-lg font-normal mt-6 md:mt-7">{description}</p>}
+      {description && (
+        <p className="sub-title text-base md:text-lg font-normal mt-6 md:mt-7">{description}</p>
+      )}
     </div>
   )
 }

@@ -1,16 +1,18 @@
 import { Popover, Transition } from '@headlessui/react'
 import { MenuIcon, XIcon } from '@heroicons/react/outline'
-import React, { Fragment, useEffect, useState } from 'react'
+import React, { FC, Fragment, useEffect, useState } from 'react'
 import { useTranslation } from 'react-i18next'
 import { Link } from 'react-router-dom'
 import { languages, Languages, initLanguage } from '../../lang/i18n'
 
-const Header = () => {
+const Header: FC = () => {
   const { t, i18n } = useTranslation()
-  const [lang, setLang] = useState<Languages>(Object.values(languages).find(language => language !== initLanguage)!)
+  const [lang, setLang] = useState<Languages>(
+    Object.values(languages).find((language) => language !== initLanguage) ?? 'en',
+  )
 
-  const handleChangeLanguage = (lang: Languages) => {
-    setLang(Object.values(languages).find(language => language !== lang)!)
+  const handleChangeLanguage = (lang: Languages): void => {
+    setLang(Object.values(languages).find((language) => language !== lang) ?? 'en')
     i18n.changeLanguage(lang)
   }
 
@@ -26,10 +28,7 @@ const Header = () => {
   return (
     <Popover>
       <div className="py-4 px-4 md:py-6 md:px-8 fixed top-0 left-0 right-0 z-20 bg-aid-purple">
-        <nav
-          className="relative flex items-center justify-between"
-          aria-label="Global"
-        >
+        <nav className="relative flex items-center justify-between" aria-label="Global">
           <div className="flex items-center flex-grow flex-shrink-0 lg:flex-grow-0">
             <div className="flex items-center justify-between w-full md:w-auto">
               <Link to="/">
@@ -50,7 +49,10 @@ const Header = () => {
           </div>
           <div className="hidden md:block md:ml-auto md:space-x-8">
             {navigation.map((item) => (
-              <Link key={item.name} to={item.link} className="font-bold text-lg text-white hover:text-aid-blue transition-all duration-300">
+              <Link
+                key={item.name}
+                to={item.link}
+                className="font-bold text-lg text-white hover:text-aid-blue transition-all duration-300">
                 {item.name}
               </Link>
             ))}
@@ -60,8 +62,7 @@ const Header = () => {
               type="button"
               className="font-bold text-lg text-white hover:text-aid-blue transition-all duration-300 md:ml-8"
               key={lang}
-              onClick={() => handleChangeLanguage(lang)}
-            >
+              onClick={() => handleChangeLanguage(lang)}>
               {t(`${lang}`)}
             </button>
           </div>
@@ -79,12 +80,10 @@ const Header = () => {
             enterTo="opacity-100 scale-100"
             leave="duration-300 ease-in-out"
             leaveFrom="opacity-100 scale-100"
-            leaveTo="opacity-0 scale-90"
-          >
+            leaveTo="opacity-0 scale-90">
             <Popover.Panel
               focus
-              className="popup absolute z-20 top-0 inset-x-0 transition transform origin-top-right md:hidden p-0"
-            >
+              className="popup absolute z-20 top-0 inset-x-0 transition transform origin-top-right md:hidden p-0">
               <div className="rounded-lg shadow-md overflow-hidden">
                 <div className="text-right">
                   <Popover.Button className="rounded-md p-2 pr-0 inline-flex items-center justify-center text-white bg-aid-purple">
@@ -94,7 +93,10 @@ const Header = () => {
                 </div>
                 <div className="px-2 pt-2 pb-3 space-y-1 bg-white bg-opacity-90">
                   {navigation.map((item) => (
-                    <Link key={item.name} to={item.link} className="block px-3 py-2 rounded-md text-base font-bold text-gray-700">
+                    <Link
+                      key={item.name}
+                      to={item.link}
+                      className="block px-3 py-2 rounded-md text-base font-bold text-gray-700">
                       {item.name}
                     </Link>
                   ))}
