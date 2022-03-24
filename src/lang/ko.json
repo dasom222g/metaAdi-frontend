@@ -10,5 +10,7 @@
   "main.why_donate": "왜 우크라이나에 기부해야 되나요?",
   "main.ukraine_midst": "우크라이나는 재난의 한가운데에 있습니다.",
   "wallet.connect_wallet": "지갑을 연결해주세요.",
-  "wallet.connect_with_one": "사용 가능한 지갑 중 하나와 연결해주세요."
+  "wallet.connect_with_one": "사용 가능한 지갑 중 하나와 연결해주세요.",
+  "wallet.meta_mask": "MetaMask",
+  "wallet.wallet_connect": "WalletConnect"
 }
