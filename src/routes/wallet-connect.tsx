@@ -1,6 +1,7 @@
 import React from 'react'
 import { useTranslation } from 'react-i18next'
 import TitleBox from '../components/TitleBox'
+import WalletBox from '../components/WalletBox'
 
 const Wallteconnect = () => {
   const { t } = useTranslation()
@@ -10,6 +11,7 @@ const Wallteconnect = () => {
       <div>
         <img className="max-h-52 md:max-h-60 mx-auto" src="./images/wallet.svg" alt="wallet" />
       </div>
+      <WalletBox />
     </div>
   )
 }
