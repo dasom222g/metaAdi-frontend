@@ -14,5 +14,6 @@
   "wallet.connect_with_one": "사용 가능한 지갑 중 하나와 연결해주세요.",
   "wallet.meta_mask": "MetaMask",
   "wallet.wallet_connect": "WalletConnect",
-  "wallet.wallet_disconnect": "Disconnect Wallet"
+  "wallet.wallet_disconnect": "Disconnect Wallet",
+  "donation.to_ukraine": "To Ukraine"
 }
