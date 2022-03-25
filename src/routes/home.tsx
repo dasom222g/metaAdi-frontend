@@ -1,5 +1,5 @@
 import React, { FC } from 'react'
-import { style } from '../lib/data'
+import { style } from '../data/style'
 import Hero from '../views/Hero'
 import Why from '../views/Why'
 

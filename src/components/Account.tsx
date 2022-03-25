@@ -1,6 +1,6 @@
 import React, { FC } from 'react'
 import { useTranslation } from 'react-i18next'
-import { style } from './../lib/data'
+import { style } from '../data/style'
 
 // interface AccountProps {
 // }

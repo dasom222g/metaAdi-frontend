@@ -1,5 +1,5 @@
 import React, { FC } from 'react'
-import { style } from '../lib/data'
+import { style } from '../data/style'
 import { AlignType } from '../lib/type'
 
 interface TitleBoxProps {

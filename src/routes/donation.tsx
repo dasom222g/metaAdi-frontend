@@ -2,7 +2,7 @@ import React, { FC } from 'react'
 import { useTranslation } from 'react-i18next'
 import Account from '../components/Account'
 import TextBox from '../components/TextBox'
-import { style } from '../lib/data'
+import { style } from '../data/style'
 
 const Donation: FC = () => {
   const { t } = useTranslation()
