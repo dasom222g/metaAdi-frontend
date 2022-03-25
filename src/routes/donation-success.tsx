@@ -1,9 +1,7 @@
-import React from 'react'
+import React, { FC } from 'react'
 
-const DonationSuccess = () => {
-  return (
-    <div>DonationSuccess</div>
-  )
+const DonationSuccess: FC = () => {
+  return <div>DonationSuccess</div>
 }
 
 export default DonationSuccess
