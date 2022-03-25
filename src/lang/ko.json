@@ -13,5 +13,6 @@
   "wallet.connect_wallet": "지갑을 연결해주세요.",
   "wallet.connect_with_one": "사용 가능한 지갑 중 하나와 연결해주세요.",
   "wallet.meta_mask": "MetaMask",
-  "wallet.wallet_connect": "WalletConnect"
+  "wallet.wallet_connect": "WalletConnect",
+  "wallet.wallet_disconnect": "Disconnect Wallet"
 }

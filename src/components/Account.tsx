@@ -1,18 +1,20 @@
 import React, { FC } from 'react'
+import { useTranslation } from 'react-i18next'
 import { style } from './../lib/data'
 
 // interface AccountProps {
 // }
 
 const Account: FC = () => {
+  const { t } = useTranslation()
   return (
     <div className={`${style.contentInterval}`}>
-      <div className={`p-6 ${style.roundBox} max-w`}>
+      <div className={`${style.roundBox}`}>
         <div className="bg-gray-400 w-10 h-10 rounded-full mx-auto overflow-hidden">
           <img src="./images/account.png" alt="profile" />
         </div>
         <div
-          className={`bg-indigo-900 text-white flex items-center w-min mx-auto ${style.roundContent}`}>
+          className={`bg-indigo-900 text-white flex items-center w-min mx-auto ${style.roundContent} ${style.innerContentInterval}`}>
           <p className="text-sm">0xabd3...92211</p>
           <button type="button" className="ml-2">
             <svg
@@ -30,11 +32,11 @@ const Account: FC = () => {
             </svg>
           </button>
         </div>
-        <p className="text-lg font-bold">4.445 ETH</p>
+        <p className={`text-lg font-bold  ${style.innerContentInterval}`}>4.445 ETH</p>
         <button
           type="button"
-          className={`px-4 py-2 border border-gray-800 text-xs ${style.roundContent}`}>
-          Disconnect Wallet
+          className={`px-4 py-2 border border-gray-800 text-xs ${style.roundContent} ${style.innerContentInterval}`}>
+          {t('wallet.wallet_disconnect')}
         </button>
       </div>
     </div>
