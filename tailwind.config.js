@@ -4,9 +4,9 @@ module.exports = {
   darkMode: false, // or 'media' or 'class'
   theme: {
     backgroundSize: {
-      'cover': 'cover',
-      'contain': 'contain',
-      'auto': 'auto',
+      cover: 'cover',
+      contain: 'contain',
+      auto: 'auto',
       '50%': '50%',
       '70%': '70%',
       '80%': '80%',
@@ -22,28 +22,28 @@ module.exports = {
         'aid-red': '#ED3B38',
       },
       minHeight: {
-        '0': '0',
+        0: '0',
         '1/4': '25%',
         '1/2': '50%',
         '3/4': '75%',
-        'full': '100%',
-        '75': '18.75rem'
+        full: '100%',
+        75: '18.75rem',
       },
       maxHeight: {
-        '75': '18.75rem'
+        75: '18.75rem',
       },
       height: {
-        '75': '18.75rem'
+        75: '18.75rem',
       },
       margin: {
-        '18': '4.5rem',
-        '22': '5.5rem',
-        '30': '7.5rem',
+        18: '4.5rem',
+        22: '5.5rem',
+        30: '7.5rem',
       },
       padding: {
-        '18': '4.5rem',
-        '22': '5.5rem',
-        '30': '7.5rem',
+        18: '4.5rem',
+        22: '5.5rem',
+        30: '7.5rem',
       },
     },
   },
@@ -63,13 +63,11 @@ module.exports = {
   plugins: [
     plugin(({ addVariant, e }) => {
       addVariant('peer-checked', ({ modifySelectors, separator }) => {
-        modifySelectors(
-          ({ className }) => {
-              const eClassName = e(`peer-checked${separator}${className}`); // escape class
-              const selector = 'input[type="radio"]'; // your input selector. Could be any
-              return [`${selector}:checked ~ .${eClassName}`]; // ~ - CSS selector for siblings
-          }
-        )
+        modifySelectors(({ className }) => {
+          const eClassName = e(`peer-checked${separator}${className}`) // escape class
+          const selector = 'input[type="radio"]' // your input selector. Could be any
+          return [`${selector}:checked ~ .${eClassName}`] // ~ - CSS selector for siblings
+        })
       })
     }),
   ],
