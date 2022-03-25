@@ -59,7 +59,7 @@ module.exports = {
       margin: ['first', 'last', 'peer-checked', 'disabled'],
       padding: ['first', 'last', 'peer-checked', 'disabled'],
       opacity: ['first', 'last', 'peer-checked', 'disabled'],
-      color: ['first', 'last', 'peer-checked', 'disabled'],
+      textColor: ['first', 'last', 'peer-checked', 'disabled'],
     },
   },
   plugins: [
