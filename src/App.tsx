@@ -8,9 +8,9 @@ import WarNews from './routes/war-news'
 import QnA from './routes/qna'
 import DonationSuccess from './routes/donation-success'
 import Wallteconnect from './routes/wallet-connect'
+import Profile from './routes/profile'
 
 const App: FC = () => {
-
   return (
     <BrowserRouter>
       <Layout>
@@ -19,6 +19,7 @@ const App: FC = () => {
           <Route path="/donation" element={<Donation />} />
           <Route path="/donation/success" element={<DonationSuccess />} />
           <Route path="/wallet-connect" element={<Wallteconnect />} />
+          <Route path="/profile" element={<Profile />} />
           <Route path="/war-news" element={<WarNews />} />
           <Route path="/qna" element={<QnA />} />
         </Routes>

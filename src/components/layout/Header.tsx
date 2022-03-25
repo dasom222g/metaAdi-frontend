@@ -18,7 +18,8 @@ const Header: FC = () => {
 
   const navigation = [
     { name: t('donation'), link: '/donation' },
-    { name: t('war_news'), link: '/war-news' },
+    // { name: t('war_news'), link: '/war-news' },
+    { name: t('profile'), link: '/profile' },
     { name: t('qna'), link: '/qna' },
   ]
 
