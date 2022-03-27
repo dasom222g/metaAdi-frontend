@@ -11,7 +11,7 @@ const Donation: FC = () => {
 
   // view
   return (
-    <div className="max-w-md mx-auto">
+    <div className="max-w-2xl mx-auto">
       <div className={`${style.contentInterval}`}>
         <Account />
       </div>
