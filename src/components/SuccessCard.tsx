@@ -1,8 +1,9 @@
-import { t } from 'i18next'
 import React, { FC } from 'react'
+import { useTranslation } from 'react-i18next'
 import { style } from '../data/style'
 
 const SuccessCard: FC = () => {
+  const { t } = useTranslation()
   return (
     <div className={`${style.roundBox}`}>
       <div className="max-w-sm mx-auto overflow-hidden pt-3 md:pt-4">
