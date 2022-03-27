@@ -17,5 +17,8 @@
   "wallet.wallet_disconnect": "Disconnect Wallet",
   "donation.to_ukraine": "To Ukraine",
   "donation.thank": "기부해 주셔서 감사합니다!",
-  "donation.success": "구매가 완료되었습니다."
+  "donation.success": "구매가 완료되었습니다.",
+  "donation.your_nft": "Your NFT",
+  "donation.sns_title": "이 캠페인을 사랑하는 사람, 친구 및 가족에게 공유하여 많은 사람들에게 알려주세요.",
+  "donation.sns_hashtag": "#암호화폐기부 #우크라이나기부 #standWithUkraine #metaAidDonationChallenge"
 }
