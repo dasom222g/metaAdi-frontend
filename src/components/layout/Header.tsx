@@ -1,6 +1,8 @@
+import React, { FC, Fragment, useEffect, useState } from 'react'
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import { faLanguage } from '@fortawesome/free-solid-svg-icons'
 import { Popover, Transition } from '@headlessui/react'
 import { MenuIcon, XIcon } from '@heroicons/react/outline'
-import React, { FC, Fragment, useEffect, useState } from 'react'
 import { useTranslation } from 'react-i18next'
 import { Link } from 'react-router-dom'
 import { languages, Languages, initLanguage } from '../../lang/i18n'
@@ -61,9 +63,19 @@ const Header: FC = () => {
           <div className="pr-2 md:pr-4">
             <button
               type="button"
-              className="font-bold text-lg text-white hover:text-aid-blue transition-all duration-300 md:ml-8"
+              className="font-bold text-lg text-white flex items-center hover:text-aid-blue transition-all duration-300 md:ml-8"
               key={lang}
               onClick={() => handleChangeLanguage(lang)}>
+              <span className="block text-gray-100 mr-2 text-2xl">
+                <FontAwesomeIcon icon={faLanguage} />
+                {/* <FontAwesomeIcon
+                  className="super-crazy-colors"
+                  name="rocket"
+                  size="2x"
+                  spin
+                  style={{ textShadow: '0 1px 0 rgba(0, 0, 0, 0.1)' }}
+                /> */}
+              </span>
               {t(`${lang}`)}
             </button>
           </div>
