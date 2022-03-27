@@ -6,7 +6,7 @@ const SuccessCard: FC = () => {
   const { t } = useTranslation()
   return (
     <div className={`${style.roundBox}`}>
-      <div className="max-w-sm mx-auto overflow-hidden pt-3 md:pt-4">
+      <div className="max-w-xs w-3/4 mx-auto overflow-hidden pt-3 md:pt-4">
         <img src="./images/thank.svg" alt="thank" />
       </div>
       <div className="text-gray-800 py-4 md:py-6">

@@ -1,8 +1,7 @@
 import React, { FC } from 'react'
 import { useTranslation } from 'react-i18next'
 import { style } from '../data/style'
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import { faCopy } from '@fortawesome/free-regular-svg-icons'
+import { MdOutlineContentCopy } from 'react-icons/md'
 
 // interface AccountProps {
 // }
@@ -18,7 +17,7 @@ const Account: FC = () => {
         className={`bg-indigo-900 text-white flex items-center w-min mx-auto ${style.roundContent} ${style.innerContentInterval}`}>
         <p className="text-sm md:text-base">0xabd3...92211</p>
         <button type="button" className="px-2 -mr-2">
-          <FontAwesomeIcon icon={faCopy} />
+          <MdOutlineContentCopy />
         </button>
       </div>
       <p className={`text-lg md:text-xl font-bold  ${style.innerContentInterval}`}>4.445 ETH</p>

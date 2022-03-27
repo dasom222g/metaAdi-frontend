@@ -36,6 +36,9 @@ module.exports = {
       height: {
         75: '18.75rem',
       },
+      width: {
+        fit: 'fit-content',
+      },
       margin: {
         18: '4.5rem',
         22: '5.5rem',
