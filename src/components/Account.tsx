@@ -9,12 +9,12 @@ const Account: FC = () => {
   const { t } = useTranslation()
   return (
     <div className={`${style.roundBox}`}>
-      <div className="bg-gray-400 w-10 h-10 rounded-full mx-auto overflow-hidden">
+      <div className="bg-gray-400 w-10 h-10 md:w-12 md:h-12 rounded-full mx-auto overflow-hidden">
         <img src="./images/account.png" alt="profile" />
       </div>
       <div
         className={`bg-indigo-900 text-white flex items-center w-min mx-auto ${style.roundContent} ${style.innerContentInterval}`}>
-        <p className="text-sm">0xabd3...92211</p>
+        <p className="text-sm md:text-base">0xabd3...92211</p>
         <button type="button" className="ml-2">
           <svg
             xmlns="http://www.w3.org/2000/svg"
@@ -31,10 +31,10 @@ const Account: FC = () => {
           </svg>
         </button>
       </div>
-      <p className={`text-lg font-bold  ${style.innerContentInterval}`}>4.445 ETH</p>
+      <p className={`text-lg md:text-xl font-bold  ${style.innerContentInterval}`}>4.445 ETH</p>
       <button
         type="button"
-        className={`px-4 py-2 border border-gray-800 text-xs ${style.roundContent} ${style.innerContentInterval}`}>
+        className={`px-4 py-2 border border-gray-600 text-gray-600 font-bold text-xs md:text-sm ${style.roundContent} ${style.innerContentInterval}`}>
         {t('wallet.wallet_disconnect')}
       </button>
     </div>

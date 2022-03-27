@@ -77,11 +77,11 @@ const Header: FC = () => {
           <Transition
             as={Fragment}
             enter="duration-300 ease-out"
-            enterFrom="opacity-0 scale-90"
+            enterFrom="opacity-0 scale-0"
             enterTo="opacity-100 scale-100"
             leave="duration-300 ease-in-out"
             leaveFrom="opacity-100 scale-100"
-            leaveTo="opacity-0 scale-90">
+            leaveTo="opacity-0 scale-0">
             <Popover.Panel
               focus
               className="popup absolute z-20 top-0 inset-x-0 transition transform origin-top-right md:hidden p-0">
