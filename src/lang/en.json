@@ -1,10 +1,11 @@
 {
   "hello": "Hello world",
-  "home": "Home",
   "donation": "Donation",
   "war_news": "War News",
   "profile": "Profile",
   "qna": "QnA",
+  "button.home": "Home",
+  "button.check_nft": "Check NFT",
   "hero.main_title_first": "Help Ukraine at war",
   "hero.main_title_second": "with your cryptocurrency!",
   "hero.sub_title": "Please donate your cryptocurrency to help the Ukrainians defend themselves, the people whose lives are threatened by missiles and constant bombardments need your support.",

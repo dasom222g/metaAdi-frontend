@@ -1,6 +1,7 @@
 import React, { FC } from 'react'
 import { useTranslation } from 'react-i18next'
 import Button from '../components/Button'
+import { style } from '../data/style'
 
 const Hero: FC = () => {
   const { t } = useTranslation()
@@ -18,7 +19,8 @@ const Hero: FC = () => {
                 <p className="mt-6 text-base text-white md:mt-8 md:text-lg lg:mx-0">
                   {t('hero.sub_title')}
                 </p>
-                <div className="md:flex md:justify-center lg:justify-start">
+                <div
+                  className={`md:flex md:justify-center lg:justify-start ${style.buttonOutInterval} ${style.contentInterval}`}>
                   <Button title={t('donation')} />
                 </div>
               </div>
