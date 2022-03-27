@@ -1,8 +1,8 @@
 Arguments: 
-  C:\Program Files\nodejs\node.exe C:\Users\USER\AppData\Roaming\npm\node_modules\yarn\bin\yarn.js add App.tsx
+  C:\Program Files\nodejs\node.exe C:\Users\USER\AppData\Roaming\npm\node_modules\yarn\bin\yarn.js add @fortawesome/pro-thin-svg-icons
 
 PATH: 
-  C:\Users\USER\bin;C:\Program Files\Git\mingw64\bin;C:\Program Files\Git\usr\local\bin;C:\Program Files\Git\usr\bin;C:\Program Files\Git\usr\bin;C:\Program Files\Git\mingw64\bin;C:\Program Files\Git\usr\bin;C:\Users\USER\bin;C:\Users\USER\dasom\go-project\bin;C:\Users\USER\AppData\Local\Microsoft\WindowsApps;C:\Users\USER\AppData\Local\Programs\Microsoft VS Code\bin;C:\Program Files\JetBrains\IntelliJ IDEA 2021.2.2\bin;C:\Go\bin;C:\Program Files (x86)\Common Files\Oracle\Java\javapath;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0;C:\WINDOWS\System32\OpenSSH;C:\Program Files\Git\cmd;C:\Program Files\PuTTY;C:\Program Files\PowerShell\7;C:\Program Files\TortoiseSVN\bin;C:\Users\USER\apache-maven-3.8.1\bin;C:\Program Files\Java\jdk-11.0.11\bin;C:\Users\USER\AppData\Roaming\npm;C:\Program Files\nodejs;C:\Users\USER\AppData\Local\Programs\Python\Python310;C:\Users\USER\AppData\Local\Programs\Python\Python310\Scripts;C:\Users\USER\AppData\Local\Programs\Python\Python36-32;C:\Users\USER\AppData\Local\Programs\Python\Python310\Scripts;C:\Users\USER\AppData\Local\Programs\Python\Python310;C:\Program Files\MySQL\MySQL Shell 8.0\bin;C:\Users\USER\AppData\Local\Microsoft\WindowsApps;C:\Users\USER\AppData\Local\Programs\Microsoft VS Code\bin;C:\Users\USER\AppData\Roaming\npm;C:\Program Files\Bandizip;C:\Program Files\JetBrains\IntelliJ IDEA 2021.2.2\bin;C:\Go\bin;C:\Users\USER\dasom\go-project\bin;C:\Users\USER\AppData\Roaming\npm\node_modules\yarn\bin;C:\Program Files\heroku\bin;C:\Users\USER\AppData\Local\Yarn\bin;C:\Program Files\Git\usr\bin\vendor_perl;C:\Program Files\Git\usr\bin\core_perl
+  C:\Users\USER\dasom\go-project\bin;C:\Users\USER\AppData\Local\Microsoft\WindowsApps;C:\Users\USER\AppData\Local\Programs\Microsoft VS Code\bin;C:\Program Files\JetBrains\IntelliJ IDEA 2021.2.2\bin;C:\Go\bin;C:\Program Files (x86)\Common Files\Oracle\Java\javapath;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0\;C:\WINDOWS\System32\OpenSSH\;C:\Program Files\Git\cmd;C:\Program Files\PuTTY\;C:\Program Files\PowerShell\7\;C:\Program Files\TortoiseSVN\bin;C:\Users\USER\apache-maven-3.8.1\bin;C:\Program Files\Java\jdk-11.0.11\bin;C:\Users\USER\AppData\Roaming\npm;C:\Program Files\nodejs;C:\Users\USER\AppData\Local\Programs\Python\Python310;C:\Users\USER\AppData\Local\Programs\Python\Python310\Scripts;C:\Users\USER\AppData\Local\Programs\Python\Python36-32\;C:\Users\USER\AppData\Local\Programs\Python\Python310\Scripts\;C:\Users\USER\AppData\Local\Programs\Python\Python310\;C:\Program Files\MySQL\MySQL Shell 8.0\bin\;C:\Users\USER\AppData\Local\Microsoft\WindowsApps;C:\Users\USER\AppData\Local\Programs\Microsoft VS Code\bin;C:\Users\USER\AppData\Roaming\npm;C:\Program Files\Bandizip\;C:\Program Files\JetBrains\IntelliJ IDEA 2021.2.2\bin;;C:\Go\bin;C:\Users\USER\dasom\go-project\bin;C:\Users\USER\AppData\Roaming\npm\node_modules\yarn\bin;C:\Program Files\heroku\bin;C:\Users\USER\AppData\Local\Yarn\bin;
 
 Yarn version: 
   1.22.17
@@ -14,7 +14,7 @@ Platform:
   win32 x64
 
 Trace: 
-  Error: https://registry.yarnpkg.com/App.tsx: Not found
+  Error: https://registry.yarnpkg.com/@fortawesome%2fpro-thin-svg-icons: Not found
       at Request.params.callback [as _callback] (C:\Users\USER\AppData\Roaming\npm\node_modules\yarn\lib\cli.js:67029:18)
       at Request.self.callback (C:\Users\USER\AppData\Roaming\npm\node_modules\yarn\lib\cli.js:140883:22)
       at Request.emit (events.js:376:20)
@@ -37,6 +37,11 @@ npm manifest:
       "@emotion/react": "11",
       "@emotion/styled": "11",
       "@ethersproject/providers": "^5.6.0",
+      "@fortawesome/fontawesome-free": "^6.1.1",
+      "@fortawesome/fontawesome-svg-core": "^6.1.1",
+      "@fortawesome/free-regular-svg-icons": "^6.1.1",
+      "@fortawesome/free-solid-svg-icons": "^6.1.1",
+      "@fortawesome/react-fontawesome": "^0.1.18",
       "@headlessui/react": "^1.5.0",
       "@heroicons/react": "^1.0.6",
       "@testing-library/jest-dom": "^5.16.1",
@@ -54,6 +59,7 @@ npm manifest:
       "@web3-react/core": "^6.1.9",
       "@web3-react/injected-connector": "^6.0.7",
       "@web3auth/web3auth": "^0.5.1",
+      "eslint-config-prettier": "^8.5.0",
       "ethers": "^5.5.4",
       "framer-motion": "6",
       "i18next": "^21.6.14",
@@ -65,6 +71,7 @@ npm manifest:
       "react-app-rewired": "^2.2.1",
       "react-canvas-confetti": "^1.3.0",
       "react-dom": "^17.0.2",
+      "react-fontawesome": "^1.7.1",
       "react-i18next": "^11.16.1",
       "react-moralis": "^1.3.2",
       "react-router-dom": "^6.2.1",
@@ -99,6 +106,7 @@ npm manifest:
       ]
     },
     "devDependencies": {
+      "@tailwindcss/forms": "^0.5.0",
       "autoprefixer": "9",
       "buffer": "^6.0.3",
       "postcss": "7",
@@ -2682,6 +2690,44 @@ Lockfile:
       "@ethersproject/properties" "^5.6.0"
       "@ethersproject/strings" "^5.6.0"
   
+  "@fortawesome/fontawesome-common-types@6.1.1":
+    version "6.1.1"
+    resolved "https://registry.yarnpkg.com/@fortawesome/fontawesome-common-types/-/fontawesome-common-types-6.1.1.tgz#7dc996042d21fc1ae850e3173b5c67b0549f9105"
+    integrity sha512-wVn5WJPirFTnzN6tR95abCx+ocH+3IFLXAgyavnf9hUmN0CfWoDjPT/BAWsUVwSlYYVBeCLJxaqi7ZGe4uSjBA==
+  
+  "@fortawesome/fontawesome-free@^6.1.1":
+    version "6.1.1"
+    resolved "https://registry.yarnpkg.com/@fortawesome/fontawesome-free/-/fontawesome-free-6.1.1.tgz#bf5d45611ab74890be386712a0e5d998c65ee2a1"
+    integrity sha512-J/3yg2AIXc9wznaVqpHVX3Wa5jwKovVF0AMYSnbmcXTiL3PpRPfF58pzWucCwEiCJBp+hCNRLWClTomD8SseKg==
+  
+  "@fortawesome/fontawesome-svg-core@^6.1.1":
+    version "6.1.1"
+    resolved "https://registry.yarnpkg.com/@fortawesome/fontawesome-svg-core/-/fontawesome-svg-core-6.1.1.tgz#3424ec6182515951816be9b11665d67efdce5b5f"
+    integrity sha512-NCg0w2YIp81f4V6cMGD9iomfsIj7GWrqmsa0ZsPh59G7PKiGN1KymZNxmF00ssuAlo/VZmpK6xazsGOwzKYUMg==
+    dependencies:
+      "@fortawesome/fontawesome-common-types" "6.1.1"
+  
+  "@fortawesome/free-regular-svg-icons@^6.1.1":
+    version "6.1.1"
+    resolved "https://registry.yarnpkg.com/@fortawesome/free-regular-svg-icons/-/free-regular-svg-icons-6.1.1.tgz#3f2f58262a839edf0643cbacee7a8a8230061c98"
+    integrity sha512-xXiW7hcpgwmWtndKPOzG+43fPH7ZjxOaoeyooptSztGmJxCAflHZxXNK0GcT0uEsR4jTGQAfGklDZE5NHoBhKg==
+    dependencies:
+      "@fortawesome/fontawesome-common-types" "6.1.1"
+  
+  "@fortawesome/free-solid-svg-icons@^6.1.1":
+    version "6.1.1"
+    resolved "https://registry.yarnpkg.com/@fortawesome/free-solid-svg-icons/-/free-solid-svg-icons-6.1.1.tgz#3369e673f8fe8be2fba30b1ec274d47490a830a6"
+    integrity sha512-0/5exxavOhI/D4Ovm2r3vxNojGZioPwmFrKg0ZUH69Q68uFhFPs6+dhAToh6VEQBntxPRYPuT5Cg1tpNa9JUPg==
+    dependencies:
+      "@fortawesome/fontawesome-common-types" "6.1.1"
+  
+  "@fortawesome/react-fontawesome@^0.1.18":
+    version "0.1.18"
+    resolved "https://registry.yarnpkg.com/@fortawesome/react-fontawesome/-/react-fontawesome-0.1.18.tgz#dae37f718a24e14d7a99a5496c873d69af3fbd73"
+    integrity sha512-RwLIB4TZw0M9gvy5u+TusAA0afbwM4JQIimNH/j3ygd6aIvYPQLqXMhC9ErY26J23rDPyDZldIfPq/HpTTJ/tQ==
+    dependencies:
+      prop-types "^15.8.1"
+  
   "@gar/promisify@^1.0.1":
     version "1.1.3"
     resolved "https://registry.yarnpkg.com/@gar/promisify/-/promisify-1.1.3.tgz#555193ab2e3bb3b6adc3d551c9c030d9e860daf6"
@@ -3268,6 +3314,13 @@ Lockfile:
     integrity sha512-XIB2XbzHTN6ieIjfIMV9hlVcfPU26s2vafYWQcZHWXHOxiaRZYEDKEwdl129Zyg50+foYV2jCgtrqSA6qNuNSA==
     dependencies:
       defer-to-connect "^1.0.1"
+  
+  "@tailwindcss/forms@^0.5.0":
+    version "0.5.0"
+    resolved "https://registry.yarnpkg.com/@tailwindcss/forms/-/forms-0.5.0.tgz#d4bea2560a10aac642573e72d3b4d62a88960449"
+    integrity sha512-KzWugryEBFkmoaYcBE18rs6gthWCFHHO7cAZm2/hv3hwD67AzwP7udSCa22E7R1+CEJL/FfhYsJWrc0b1aeSzw==
+    dependencies:
+      mini-svg-data-uri "^1.2.3"
   
   "@testing-library/dom@^8.0.0":
     version "8.11.3"
@@ -7434,6 +7487,11 @@ Lockfile:
     optionalDependencies:
       source-map "~0.6.1"
   
+  eslint-config-prettier@^8.5.0:
+    version "8.5.0"
+    resolved "https://registry.yarnpkg.com/eslint-config-prettier/-/eslint-config-prettier-8.5.0.tgz#5a81680ec934beca02c7b1a61cf8ca34b66feab1"
+    integrity sha512-obmWKLUNCnhtQRKc+tmnYuQl0pFU1ibYJQ5BGhTVB08bHe9wC8qUeG7c08dj9XX+AuPj1YSGSQIHl1pnDHZR0Q==
+  
   eslint-config-react-app@^6.0.0:
     version "6.0.0"
     resolved "https://registry.yarnpkg.com/eslint-config-react-app/-/eslint-config-react-app-6.0.0.tgz#ccff9fc8e36b322902844cbd79197982be355a0e"
@@ -11416,6 +11474,11 @@ Lockfile:
       schema-utils "^1.0.0"
       webpack-sources "^1.1.0"
   
+  mini-svg-data-uri@^1.2.3:
+    version "1.4.4"
+    resolved "https://registry.yarnpkg.com/mini-svg-data-uri/-/mini-svg-data-uri-1.4.4.tgz#8ab0aabcdf8c29ad5693ca595af19dd2ead09939"
+    integrity sha512-r9deDe9p5FJUPZAk3A59wGH7Ii9YrjjWw0jmw/liSbHl2CHiyXj6FcDXDu2K3TjVAXqiJdaw3xxwlZZr9E6nHg==
+  
   minimalistic-assert@^1.0.0, minimalistic-assert@^1.0.1:
     version "1.0.1"
     resolved "https://registry.yarnpkg.com/minimalistic-assert/-/minimalistic-assert-1.0.1.tgz#2e194de044626d4a10e7f7fbc00ce73e83e4d5c7"
@@ -13461,7 +13524,7 @@ Lockfile:
       kleur "^3.0.3"
       sisteransi "^1.0.5"
   
-  prop-types@^15.6.2, prop-types@^15.7.2, prop-types@^15.8.1:
+  prop-types@^15.5.6, prop-types@^15.6.2, prop-types@^15.7.2, prop-types@^15.8.1:
     version "15.8.1"
     resolved "https://registry.yarnpkg.com/prop-types/-/prop-types-15.8.1.tgz#67d87bf1a694f48435cf332c24af10214a3140b5"
     integrity sha512-oj87CgZICdulUohogVAR7AjlC0327U4el4L6eAvOqCeudMDVU0NThNaV+b9Df4dXgSP1gXMTnPdhfe/2qDH5cg==
@@ -13780,6 +13843,13 @@ Lockfile:
       react-clientside-effect "^1.2.5"
       use-callback-ref "^1.2.5"
       use-sidecar "^1.0.5"
+  
+  react-fontawesome@^1.7.1:
+    version "1.7.1"
+    resolved "https://registry.yarnpkg.com/react-fontawesome/-/react-fontawesome-1.7.1.tgz#f74f5a338fef3ee3b379820109c1cba47290f035"
+    integrity sha512-kottReWW1I9Uupub6A5YX4VK7qfpFnEjAcm5zB4Aepst7iofONT27GJYdTcRsj7q5uQu9PXBL7GsxAFKANNUVg==
+    dependencies:
+      prop-types "^15.5.6"
   
   react-i18next@*, react-i18next@^11.16.1:
     version "11.16.1"

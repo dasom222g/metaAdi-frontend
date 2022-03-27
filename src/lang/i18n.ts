@@ -25,8 +25,8 @@ i18n.use(initReactI18next).init({
   fallbackLng: languages.english,
   keySeparator: false,
   interpolation: {
-    escapeValue: false
-  }
+    escapeValue: false,
+  },
 })
 
 export default i18n

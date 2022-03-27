@@ -68,13 +68,6 @@ const Header: FC = () => {
               onClick={() => handleChangeLanguage(lang)}>
               <span className="block text-gray-100 mr-2 text-2xl">
                 <FontAwesomeIcon icon={faLanguage} />
-                {/* <FontAwesomeIcon
-                  className="super-crazy-colors"
-                  name="rocket"
-                  size="2x"
-                  spin
-                  style={{ textShadow: '0 1px 0 rgba(0, 0, 0, 0.1)' }}
-                /> */}
               </span>
               {t(`${lang}`)}
             </button>
