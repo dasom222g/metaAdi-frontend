@@ -5,6 +5,7 @@ import CardNFT from '../components/CardNFT'
 import TextBox from '../components/TextBox'
 import { data } from '../data/response'
 import { style } from '../data/style'
+import { CardStateType } from '../lib/type'
 
 const Donation: FC = () => {
   const { t } = useTranslation()
@@ -25,8 +26,8 @@ const Donation: FC = () => {
       </div>
       <div className={`${style.contentInterval}`}>
         <div className="flex flex-wrap -mx-1">
-          <CardNFT />
-          <CardNFT />
+          <CardNFT type={CardStateType.sales} />
+          <CardNFT type={CardStateType.sales} />
         </div>
       </div>
     </div>

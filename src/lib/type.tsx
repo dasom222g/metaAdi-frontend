@@ -16,3 +16,8 @@ export interface WalletType {
   type: keyof typeof Wallet
   title: string
 }
+
+export const enum CardStateType {
+  sales,
+  view,
+}

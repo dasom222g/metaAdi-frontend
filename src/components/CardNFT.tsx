@@ -1,11 +1,16 @@
 import React, { FC } from 'react'
 import { useTranslation } from 'react-i18next'
+import { CardStateType } from '../lib/type'
 
-const CardNFT: FC = () => {
+interface CardNFT {
+  type: CardStateType
+}
+
+const CardNFT: FC<CardNFT> = ({ type }) => {
   const { t } = useTranslation()
   const ethereumBg = { backgroundImage: 'url(/images/ethereum.svg)' }
   return (
-    <div className="p-1 w-1/2">
+    <div className={`p-1 md:p-2 w-1/2 ${type === CardStateType.view ? 'mx-auto' : ''}`}>
       <div className="block bg-gray-800 rounded-lg overflow-hidden shadow-2xl transform hover:-translate-y-2 transition duration-300">
         <div className="w-full pb-full h-0">
           <img src="./images/temp/1.png" alt="NFT" />
@@ -19,13 +24,15 @@ const CardNFT: FC = () => {
               <span className="block text-white font-bold">0.5</span>
             </div>
           </div>
-          <div className="mt-4 pb-1">
-            <button
-              type="button"
-              className="w-full flex items-center justify-center p-2 rounded-lg text-white text-sm font-extrabold bg-aid-purple hover:bg-aid-blue hover:text-gray-800 md:py-4 md:px-10 transition-all duration-300">
-              {t('donation')}
-            </button>
-          </div>
+          {type === CardStateType.sales && (
+            <div className="mt-4 pb-1">
+              <button
+                type="button"
+                className="w-full flex items-center justify-center p-2 rounded-lg text-white text-sm font-extrabold bg-aid-purple hover:bg-aid-blue hover:text-gray-800 md:py-4 md:px-10 transition-all duration-300">
+                {t('donation')}
+              </button>
+            </div>
+          )}
         </div>
       </div>
     </div>
