@@ -17,7 +17,7 @@ const App: FC = () => {
         <Routes>
           <Route path="/" element={<Home />} />
           <Route path="/donation" element={<Donation />} />
-          <Route path="/donation/success" element={<DonationSuccess />} />
+          <Route path="/donation-success" element={<DonationSuccess />} />
           <Route path="/wallet-connect" element={<Wallteconnect />} />
           <Route path="/profile" element={<Profile />} />
           <Route path="/war-news" element={<WarNews />} />

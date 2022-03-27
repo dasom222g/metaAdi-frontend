@@ -19,6 +19,7 @@ module.exports = {
         'aid-yellow': '#F9F871',
         'aid-light-pink': '#F7EBFF',
         'aid-light-blue': '#C6FCED',
+        'aid-light-white': '#F8FAFF',
         'aid-red': '#ED3B38',
       },
       minHeight: {

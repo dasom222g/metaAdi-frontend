@@ -15,5 +15,7 @@
   "wallet.meta_mask": "MetaMask",
   "wallet.wallet_connect": "WalletConnect",
   "wallet.wallet_disconnect": "Disconnect Wallet",
-  "donation.to_ukraine": "To Ukraine"
+  "donation.to_ukraine": "To Ukraine",
+  "donation.thank": "Thank you for your donation!",
+  "donation.success": "You donate 0.05ETH"
 }

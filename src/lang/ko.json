@@ -15,5 +15,7 @@
   "wallet.meta_mask": "MetaMask",
   "wallet.wallet_connect": "WalletConnect",
   "wallet.wallet_disconnect": "Disconnect Wallet",
-  "donation.to_ukraine": "To Ukraine"
+  "donation.to_ukraine": "To Ukraine",
+  "donation.thank": "기부해 주셔서 감사합니다!",
+  "donation.success": "구매가 완료되었습니다."
 }
