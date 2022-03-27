@@ -1,6 +1,5 @@
 import React, { FC } from 'react'
 import { useTranslation } from 'react-i18next'
-import { style } from '../data/style'
 import { WalletType } from '../lib/type'
 import WalletBoxButton from './WalletBoxButton'
 
@@ -20,7 +19,7 @@ const WalletBox: FC = () => {
   ]
 
   return (
-    <div className={`mx-auto md:max-w-md ${style.contentInterval}`}>
+    <div className="mx-auto md:max-w-md">
       <div className="rounded-lg overflow-hidden">
         {wallets.map((wallet) => (
           <WalletBoxButton key={wallet.id} wallet={wallet} />

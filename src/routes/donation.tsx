@@ -11,11 +11,11 @@ const Donation: FC = () => {
 
   // view
   return (
-    <div className="max-w-2xl mx-auto">
+    <div className="max-w-2xl mx-auto pt-4 md:pt-6">
       <div className={`${style.contentInterval}`}>
         <Account />
       </div>
-      <div className={`${style.contentInterval} pt-0 md:pt-0`}>
+      <div className={`${style.contentInterval}`}>
         <TextBox
           label={t('donation.to_ukraine')}
           value={data.addressUk}
@@ -23,7 +23,7 @@ const Donation: FC = () => {
           color={'white'}
         />
       </div>
-      <div className={`${style.contentInterval} pt-0 md:pt-0`}>
+      <div className={`${style.contentInterval}`}>
         <div className="flex flex-wrap -mx-1">
           <CardNFT />
           <CardNFT />
