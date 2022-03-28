@@ -11,7 +11,7 @@ const Layout: FC<LayoutProps> = ({ children }) => {
     <div className="h-full wrap overflow-hidden">
       <Header />
       <div className="h-full overflow-auto bg-aid-purple flex flex-col">
-        <main className="pt-18 md:pt-22 pb-4 md:pb-6 px-4 md:px-8 h-full">{children}</main>
+        <main className="pt-18 md:pt-22 pb-4 md:pb-6 px-4 md:px-8">{children}</main>
         <Footer />
       </div>
     </div>
