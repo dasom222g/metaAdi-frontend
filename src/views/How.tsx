@@ -12,10 +12,10 @@ const Why: FC = () => {
         subTitle={t('main.how_sub_title')}
         align={'center'}
       />
-      <div className="max-w-2xl mx-auto">
+      <div className="max-w-lg mx-auto">
         {/* START: 1 step */}
-        <div className="py-8 -mt-8 overflow-hidden relative">
-          <div className="w-56 md:w-72 bg-aid-purple rounded-xl border border-gray-800 text-white py-2 px-4 relative z-10">
+        <div className="py-8 md:py-14 -mt-8 md:-mt-14 overflow-hidden relative">
+          <div className="w-56 md:w-75 bg-aid-purple rounded-xl border border-gray-800 text-white py-2 px-4 relative z-10">
             <div className="flex items-start">
               <span className="text-base font-bold">1.</span>
               <div className="pl-2">
@@ -27,8 +27,8 @@ const Why: FC = () => {
           <div className="absolute right-10 md:right-14 top-1/2 transform z-0">
             {/* ping */}
             <span className="flex h-3 w-3 md:h-5 md:w-5 absolute -right-1 -top-1">
-              <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-purple-400 opacity-75"></span>
-              <span className="relative inline-flex rounded-full h-3 w-3 md:h-5 md:w-5 bg-purple-500"></span>
+              <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-indigo-400 opacity-90"></span>
+              <span className="relative inline-flex rounded-full h-3 w-3 md:h-5 md:w-5 bg-indigo-600"></span>
             </span>
             {/* //ping */}
             <svg
@@ -60,12 +60,12 @@ const Why: FC = () => {
           </div>
         </div>
         {/* START: 2 step */}
-        <div className="py-8 -mt-8 overflow-hidden relative">
+        <div className="py-8 md:py-14 -mt-8 md:-mt-14 overflow-hidden relative">
           <div className="absolute left-10 md:left-14 top-1/2 transform -scale-x-1 z-0">
             {/* ping */}
             <span className="flex h-3 w-3 md:h-5 md:w-5 absolute -right-1 -top-1">
-              <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-purple-400 opacity-75"></span>
-              <span className="relative inline-flex rounded-full h-3 w-3 md:h-5 md:w-5 bg-purple-500"></span>
+              <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-indigo-400 opacity-90"></span>
+              <span className="relative inline-flex rounded-full h-3 w-3 md:h-5 md:w-5 bg-indigo-600"></span>
             </span>
             {/* //ping */}
             <svg
@@ -95,7 +95,7 @@ const Why: FC = () => {
               />
             </svg>
           </div>
-          <div className="w-56 md:w-72 bg-aid-purple rounded-xl border border-gray-800 text-white py-2 px-4 ml-auto relative z-10">
+          <div className="w-56 md:w-75 bg-aid-purple rounded-xl border border-gray-800 text-white py-2 px-4 ml-auto relative z-10">
             <div className="flex items-start">
               <span className="text-base font-bold">2.</span>
               <div className="pl-2">
@@ -106,8 +106,8 @@ const Why: FC = () => {
           </div>
         </div>
         {/* START: 3 step */}
-        <div className="py-8 -mt-8 overflow-hidden relative">
-          <div className="w-56 md:w-72 bg-aid-purple rounded-xl border border-gray-800 text-white py-2 px-4 relative z-10">
+        <div className="py-8 md:py-14 -mt-8 md:-mt-14 overflow-hidden relative">
+          <div className="w-56 md:w-75 bg-aid-purple rounded-xl border border-gray-800 text-white py-2 px-4 relative z-10">
             <div className="flex items-start">
               <span className="text-base font-bold">3.</span>
               <div className="pl-2">
@@ -119,8 +119,8 @@ const Why: FC = () => {
           <div className="absolute right-10 md:right-14 top-1/2 transform z-0">
             {/* ping */}
             <span className="flex h-3 w-3 md:h-5 md:w-5 absolute -right-1 -top-1">
-              <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-purple-400 opacity-75"></span>
-              <span className="relative inline-flex rounded-full h-3 w-3 md:h-5 md:w-5 bg-purple-500"></span>
+              <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-indigo-400 opacity-90"></span>
+              <span className="relative inline-flex rounded-full h-3 w-3 md:h-5 md:w-5 bg-indigo-600"></span>
             </span>
             {/* //ping */}
             <svg
@@ -152,15 +152,9 @@ const Why: FC = () => {
           </div>
         </div>
         {/* START: 4 step */}
-        <div className="py-8 -mt-8 overflow-hidden relative">
-          <div className="w-56 md:w-72 bg-aid-purple rounded-xl border border-gray-800 text-white py-2 px-4 ml-auto relative z-10">
-            <div className="flex items-start">
-              <span className="text-base font-bold">2.</span>
-              <div className="pl-2">
-                <h3 className="text-sm font-bold">{t('main.how_step2_title')}</h3>
-                <p className="text-sm pt-1">{t('main.how_step2_description')}</p>
-              </div>
-            </div>
+        <div className="py-8 md:py-14 -mt-8 md:-mt-14 overflow-hidden relative">
+          <div className="w-36 md:w-48 bg-gray-400 rounded-full overflow-hidden ml-auto relative z-10">
+            <img src="./images/temp/1.png" alt="NFT" />
           </div>
         </div>
       </div>
