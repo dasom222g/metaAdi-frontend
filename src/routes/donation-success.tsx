@@ -1,6 +1,7 @@
 import React, { FC } from 'react'
 import { useTranslation } from 'react-i18next'
 import CardNFT from '../components/CardNFT'
+import { FireCracker } from '../components/FireCracker'
 import Share from '../components/Share'
 import SuccessCard from '../components/SuccessCard'
 import { style } from '../data/style'
@@ -11,6 +12,7 @@ const DonationSuccess: FC = () => {
   const { t } = useTranslation()
   return (
     <div className="pt-4 md:pt-6">
+      <FireCracker />
       <div className={`max-w-2xl mx-auto ${style.contentInterval}`}>
         <SuccessCard />
       </div>
