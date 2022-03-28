@@ -2,8 +2,10 @@ import React, { FC } from 'react'
 
 const Header: FC = () => {
   return (
-    <footer className="py-4 px-4 md:py-6 md:px-8 mt-auto bg-white">
-      <p className="text-gray-900">Powered by somi</p>
+    <footer className="py-4 md:py-6 mt-auto px-8 bg-gray-800">
+      <div className="max-w-2xl mx-auto">
+        <p className="text-white text-sm md:text-lg">Powered by somi</p>
+      </div>
     </footer>
   )
 }
