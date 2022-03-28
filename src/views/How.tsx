@@ -12,13 +12,154 @@ const Why: FC = () => {
         subTitle={t('main.how_sub_title')}
         align={'center'}
       />
-      <div className="px-4">
-        <div className="w-52 bg-aid-purple rounded-xl border border-gray-800 text-white">
-          <div className="flex items-start">
-            <span className="text-lg font-bold py-1">1.</span>
-            <div className="px-2">
-              <h3 className="text-lg font-bold py-1">{t('main.how_step1_title')}</h3>
-              <p className="text-sm py-1">{t('main.how_step1_description')}</p>
+      <div className="max-w-2xl mx-auto">
+        {/* START: 1 step */}
+        <div className="py-8 -mt-8 overflow-hidden relative">
+          <div className="w-56 md:w-72 bg-aid-purple rounded-xl border border-gray-800 text-white py-2 px-4 relative z-10">
+            <div className="flex items-start">
+              <span className="text-base font-bold">1.</span>
+              <div className="pl-2">
+                <h3 className="text-sm font-bold">{t('main.how_step1_title')}</h3>
+                <p className="text-sm pt-1">{t('main.how_step1_description')}</p>
+              </div>
+            </div>
+          </div>
+          <div className="absolute right-10 md:right-14 top-1/2 transform z-0">
+            {/* ping */}
+            <span className="flex h-3 w-3 md:h-5 md:w-5 absolute -right-1 -top-1">
+              <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-purple-400 opacity-75"></span>
+              <span className="relative inline-flex rounded-full h-3 w-3 md:h-5 md:w-5 bg-purple-500"></span>
+            </span>
+            {/* //ping */}
+            <svg
+              width="604"
+              height="604"
+              viewBox="0 0 604 604"
+              fill="none"
+              className="w-36 h-36 md:hidden"
+              xmlns="http://www.w3.org/2000/svg">
+              <path
+                d="M0 4H576.5C589.755 4 600.5 14.7452 600.5 28V604"
+                stroke="rgba(31, 41, 55, .6)"
+                strokeWidth="8"
+              />
+            </svg>
+            <svg
+              width="604"
+              height="604"
+              viewBox="0 0 604 604"
+              fill="none"
+              className="hidden md:block w-100 h-100"
+              xmlns="http://www.w3.org/2000/svg">
+              <path
+                d="M0 4H576.5C589.755 4 600.5 14.7452 600.5 28V604"
+                stroke="rgba(31, 41, 55, .6)"
+                strokeWidth="3"
+              />
+            </svg>
+          </div>
+        </div>
+        {/* START: 2 step */}
+        <div className="py-8 -mt-8 overflow-hidden relative">
+          <div className="absolute left-10 md:left-14 top-1/2 transform -scale-x-1 z-0">
+            {/* ping */}
+            <span className="flex h-3 w-3 md:h-5 md:w-5 absolute -right-1 -top-1">
+              <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-purple-400 opacity-75"></span>
+              <span className="relative inline-flex rounded-full h-3 w-3 md:h-5 md:w-5 bg-purple-500"></span>
+            </span>
+            {/* //ping */}
+            <svg
+              width="604"
+              height="604"
+              viewBox="0 0 604 604"
+              fill="none"
+              className="w-36 h-36 md:hidden"
+              xmlns="http://www.w3.org/2000/svg">
+              <path
+                d="M0 4H576.5C589.755 4 600.5 14.7452 600.5 28V604"
+                stroke="rgba(31, 41, 55, .6)"
+                strokeWidth="8"
+              />
+            </svg>
+            <svg
+              width="604"
+              height="604"
+              viewBox="0 0 604 604"
+              fill="none"
+              className="hidden md:block w-100 h-100"
+              xmlns="http://www.w3.org/2000/svg">
+              <path
+                d="M0 4H576.5C589.755 4 600.5 14.7452 600.5 28V604"
+                stroke="rgba(31, 41, 55, .6)"
+                strokeWidth="3"
+              />
+            </svg>
+          </div>
+          <div className="w-56 md:w-72 bg-aid-purple rounded-xl border border-gray-800 text-white py-2 px-4 ml-auto relative z-10">
+            <div className="flex items-start">
+              <span className="text-base font-bold">2.</span>
+              <div className="pl-2">
+                <h3 className="text-sm font-bold">{t('main.how_step2_title')}</h3>
+                <p className="text-sm pt-1">{t('main.how_step2_description')}</p>
+              </div>
+            </div>
+          </div>
+        </div>
+        {/* START: 3 step */}
+        <div className="py-8 -mt-8 overflow-hidden relative">
+          <div className="w-56 md:w-72 bg-aid-purple rounded-xl border border-gray-800 text-white py-2 px-4 relative z-10">
+            <div className="flex items-start">
+              <span className="text-base font-bold">3.</span>
+              <div className="pl-2">
+                <h3 className="text-sm font-bold">{t('main.how_step3_title')}</h3>
+                <p className="text-sm pt-1">{t('main.how_step3_description')}</p>
+              </div>
+            </div>
+          </div>
+          <div className="absolute right-10 md:right-14 top-1/2 transform z-0">
+            {/* ping */}
+            <span className="flex h-3 w-3 md:h-5 md:w-5 absolute -right-1 -top-1">
+              <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-purple-400 opacity-75"></span>
+              <span className="relative inline-flex rounded-full h-3 w-3 md:h-5 md:w-5 bg-purple-500"></span>
+            </span>
+            {/* //ping */}
+            <svg
+              width="604"
+              height="604"
+              viewBox="0 0 604 604"
+              fill="none"
+              className="w-36 h-36 md:hidden"
+              xmlns="http://www.w3.org/2000/svg">
+              <path
+                d="M0 4H576.5C589.755 4 600.5 14.7452 600.5 28V604"
+                stroke="rgba(31, 41, 55, .6)"
+                strokeWidth="8"
+              />
+            </svg>
+            <svg
+              width="604"
+              height="604"
+              viewBox="0 0 604 604"
+              fill="none"
+              className="hidden md:block w-100 h-100"
+              xmlns="http://www.w3.org/2000/svg">
+              <path
+                d="M0 4H576.5C589.755 4 600.5 14.7452 600.5 28V604"
+                stroke="rgba(31, 41, 55, .6)"
+                strokeWidth="3"
+              />
+            </svg>
+          </div>
+        </div>
+        {/* START: 4 step */}
+        <div className="py-8 -mt-8 overflow-hidden relative">
+          <div className="w-56 md:w-72 bg-aid-purple rounded-xl border border-gray-800 text-white py-2 px-4 ml-auto relative z-10">
+            <div className="flex items-start">
+              <span className="text-base font-bold">2.</span>
+              <div className="pl-2">
+                <h3 className="text-sm font-bold">{t('main.how_step2_title')}</h3>
+                <p className="text-sm pt-1">{t('main.how_step2_description')}</p>
+              </div>
             </div>
           </div>
         </div>

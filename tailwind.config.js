@@ -35,9 +35,14 @@ module.exports = {
       },
       height: {
         75: '18.75rem',
+        100: '25rem',
+        150: '37.5rem',
       },
       width: {
         fit: 'fit-content',
+        75: '18.75rem',
+        100: '25rem',
+        150: '37.5rem',
       },
       margin: {
         18: '4.5rem',
@@ -49,6 +54,9 @@ module.exports = {
         22: '5.5rem',
         30: '7.5rem',
         full: '100%',
+      },
+      scale: {
+        '-1': '-1',
       },
     },
   },
