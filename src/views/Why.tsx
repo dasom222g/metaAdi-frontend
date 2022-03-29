@@ -11,6 +11,7 @@ const Why: FC = () => {
         mainTitle={t('main.why_donate')}
         subTitle={t('main.ukraine_midst')}
         align={'center'}
+        color={'white'}
       />
     </>
   )
