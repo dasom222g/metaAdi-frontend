@@ -45,6 +45,8 @@ export const enum PlatformEnum {
   TWITTER = 'twitter',
   TELEGRAM = 'telegram',
   YOUTUBE = 'youtube',
+  ROCKET = 'rocket',
+  LINKEDIN = 'linkedin',
 }
 
 export const enum PlatformCodeEnum {
@@ -55,6 +57,8 @@ export const enum PlatformCodeEnum {
   TWITTER = 5,
   TELEGRAM = 6,
   YOUTUBE = 7,
+  ROCKET = 8,
+  LINKEDIN = 9,
 }
 
 export const enum FileFormatEnum {

@@ -7,6 +7,8 @@ import {
   FaTwitter,
   FaTelegram,
   FaYoutube,
+  FaRocket,
+  FaLinkedin,
 } from 'react-icons/fa'
 import { PlatformEnum, SnsType } from '../lib/type'
 
@@ -24,6 +26,8 @@ const ShareButton: FC<ShareButtonProps> = ({ sns }) => {
       {sns.platform === PlatformEnum.TWITTER && <FaTwitter />}
       {sns.platform === PlatformEnum.TELEGRAM && <FaTelegram />}
       {sns.platform === PlatformEnum.YOUTUBE && <FaYoutube />}
+      {sns.platform === PlatformEnum.ROCKET && <FaRocket />}
+      {sns.platform === PlatformEnum.LINKEDIN && <FaLinkedin />}
       <span className="sr-only">{sns.platform}</span>
     </a>
   )

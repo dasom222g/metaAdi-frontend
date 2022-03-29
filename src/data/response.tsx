@@ -33,14 +33,14 @@ export const personInfoList: InfoType[] = [
     email: 'dasom228@gmail.com',
     snsList: [
       {
-        id: PlatformCodeEnum.TWITTER,
-        platform: PlatformEnum.TWITTER,
-        link: 'https://twitter.com/dasom228',
+        id: PlatformCodeEnum.ROCKET,
+        platform: PlatformEnum.ROCKET,
+        link: 'https://www.rocketpunch.com/@dasom228',
       },
       {
-        id: PlatformCodeEnum.INSTAGRAM,
-        platform: PlatformEnum.INSTAGRAM,
-        link: 'https://www.instagram.com/puddingi228',
+        id: PlatformCodeEnum.GITHUB,
+        platform: PlatformEnum.GITHUB,
+        link: 'https://github.com/dasom222g',
       },
       {
         id: PlatformCodeEnum.YOUTUBE,
