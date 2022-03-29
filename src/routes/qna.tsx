@@ -2,14 +2,14 @@ import React, { FC } from 'react'
 import TitleBox from '../components/TitleBox'
 
 const QnA: FC = () => {
-  const handleOpen = (): void => {
-    console.log('open')
-  }
+  // const handleOpen = (): void => {
+  //   console.log('open')
+  // }
   // view
   return (
     <div className="h-full">
       <TitleBox mainTitle={'Comming soon'} subTitle={''} align={'center'} color={'white'} />
-      <main className="p-5 bg-light-blue">
+      {/* <main className="p-5 bg-light-blue">
         <div className="flex justify-center items-start my-2">
           <div className="w-full sm:w-10/12 md:w-1/2 my-1">
             <h2 className="text-xl font-semibold text-vnet-blue mb-2">
@@ -39,7 +39,7 @@ const QnA: FC = () => {
             </ul>
           </div>
         </div>
-      </main>
+      </main> */}
     </div>
   )
 }
