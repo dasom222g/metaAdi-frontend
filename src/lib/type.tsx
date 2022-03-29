@@ -21,3 +21,37 @@ export const enum CardStateType {
   sales,
   view,
 }
+
+export interface InfoType {
+  id: number
+  name?: string
+  nickname: string
+  email: string
+  snsList: SnsType[]
+}
+
+export interface SnsType {
+  id: PlatformCodeEnum
+  platform: PlatformEnum
+  link: string
+}
+
+export const enum PlatformEnum {
+  GITHUB = 'github',
+  DISCORD = 'discord',
+  FACEBOOK = 'facebook',
+  INSTAGRAM = 'instagram',
+  TWITTER = 'twitter',
+  TELEGRAM = 'telegram',
+  YOUTUBE = 'youtube',
+}
+
+export const enum PlatformCodeEnum {
+  GITHUB = 1,
+  DISCORD = 2,
+  FACEBOOK = 3,
+  INSTAGRAM = 4,
+  TWITTER = 5,
+  TELEGRAM = 6,
+  YOUTUBE = 7,
+}
