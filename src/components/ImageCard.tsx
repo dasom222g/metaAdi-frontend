@@ -12,7 +12,8 @@ const ImageCard: FC<ImageCardProps> = ({ info, width, widthMd }) => {
   return (
     <div
       className={`p-2 rounded-lg ${width ? 'w-' + width : ''} ${widthMd ? 'md:w-' + widthMd : ''}`}>
-      <div className="rounded-lg overflow-hidden w-full h-0 pb-full">
+      <div className="rounded-lg overflow-hidden w-full h-0 pb-full relative">
+        <i className="absolute block inset-0 bg-gray-800 bg-opacity-20" />
         <img
           src={`./images/contents/${fileName}.${fileFormat}`}
           className="w-full h-auto"

@@ -2,7 +2,8 @@ import React, { FC } from 'react'
 import { useTranslation } from 'react-i18next'
 import ImageCard from '../components/ImageCard'
 import TitleBox from '../components/TitleBox'
-import { warMainImage } from '../data/response'
+import { warMainImage, warSubImages } from '../data/response'
+import { style } from '../data/style'
 
 const Why: FC = () => {
   const { t } = useTranslation()
@@ -15,13 +16,20 @@ const Why: FC = () => {
         align={'center'}
         color={'white'}
       />
-      <div className="md:flex max-w-3xl mx-auto">
-        <p className="text-sm font-normal text-white py-2 md:w-3/4 md:min-w-3/4">
+      <div className={`md:flex max-w-3xl mx-auto ${style.contentInterval} -mt-4 md:-mt-6`}>
+        <p className="text-sm font-normal text-white p-2 md:w-3/4 md:min-w-3/4">
           {t('main.why_description')}
         </p>
         <div className="hidden md:block">
           <ImageCard info={warMainImage} />
         </div>
+      </div>
+      <div className={`flex flex-wrap max-w-4xl mx-auto ${style.contentInterval}`}>
+        {warSubImages.map((image) => (
+          <div key={image.id} className="w-1/2 md:w-1/4">
+            <ImageCard info={image} />
+          </div>
+        ))}
       </div>
     </>
   )
