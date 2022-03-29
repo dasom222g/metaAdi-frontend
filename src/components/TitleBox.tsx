@@ -4,7 +4,7 @@ import { AlignType } from '../lib/type'
 
 interface TitleBoxProps {
   mainTitle: string
-  subTitle: string
+  subTitle?: string
   description?: string
   align: AlignType
   color?: string
@@ -14,7 +14,7 @@ const TitleBox: FC<TitleBoxProps> = ({ mainTitle, subTitle, description, align, 
   return (
     <div className={`text-${align} ${style.contentInterval} text-${color || 'gray-800'}`}>
       <h2 className="text-3xl tracking-tight font-black md:text-5xl py-3 md:py-4">{mainTitle}</h2>
-      <p className="text-lg md:text-2xl font-normal py-3 md:py-4">{subTitle}</p>
+      {subTitle && <p className="text-lg md:text-2xl font-normal py-3 md:py-4">{subTitle}</p>}
       {description && (
         <p className="text-base md:text-lg font-normal py-3 md:py-4">{description}</p>
       )}
