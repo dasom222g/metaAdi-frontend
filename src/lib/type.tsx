@@ -56,3 +56,15 @@ export const enum PlatformCodeEnum {
   TELEGRAM = 6,
   YOUTUBE = 7,
 }
+
+export const enum FileFormatEnum {
+  PNG = 'png',
+  JPG = 'jpg',
+  SVG = 'svg',
+}
+
+export interface ImageInfoType {
+  id: number
+  fileName: string
+  fileFormat: FileFormatEnum
+}

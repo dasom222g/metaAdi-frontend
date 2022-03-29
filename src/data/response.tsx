@@ -1,5 +1,12 @@
 import { t } from 'i18next'
-import { InfoType, PlatformCodeEnum, PlatformEnum, WalletType } from '../lib/type'
+import {
+  FileFormatEnum,
+  ImageInfoType,
+  InfoType,
+  PlatformCodeEnum,
+  PlatformEnum,
+  WalletType,
+} from '../lib/type'
 
 export const data = {
   addressUk: '0x165CD37b4C644C2921454429E7F9358d18A45e14',
@@ -59,5 +66,33 @@ export const personInfoList: InfoType[] = [
         link: 'https://www.youtube.com/channel/UCw2v-EFHM2R_PidUq68_QIA',
       },
     ],
+  },
+]
+
+export const warMainImage: ImageInfoType = {
+  id: 1,
+  fileName: 'war1',
+  fileFormat: FileFormatEnum.PNG,
+}
+export const warSubImages: ImageInfoType[] = [
+  {
+    id: 2,
+    fileName: 'war2',
+    fileFormat: FileFormatEnum.PNG,
+  },
+  {
+    id: 3,
+    fileName: 'war3',
+    fileFormat: FileFormatEnum.PNG,
+  },
+  {
+    id: 4,
+    fileName: 'war4',
+    fileFormat: FileFormatEnum.PNG,
+  },
+  {
+    id: 5,
+    fileName: 'war5',
+    fileFormat: FileFormatEnum.PNG,
   },
 ]
