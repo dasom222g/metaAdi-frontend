@@ -1,10 +1,12 @@
 import React, { FC } from 'react'
 import { useTranslation } from 'react-i18next'
+import { useNavigate } from 'react-router-dom'
 import Button from '../components/Button'
 import { style } from '../data/style'
 
 const Hero: FC = () => {
   const { t } = useTranslation()
+  const navigate = useNavigate()
   return (
     <div className="relative overflow-hidden bg-aid-purple -mx-4 md:-mx-8">
       <div className="custom-shape-divider-bottom-1647846273">
@@ -21,7 +23,7 @@ const Hero: FC = () => {
                 </p>
                 <div
                   className={`md:flex md:justify-center lg:justify-start ${style.buttonOutInterval} ${style.contentInterval}`}>
-                  <Button title={t('donation')} />
+                  <Button title={t('donation')} handleClick={() => navigate('/donation')} />
                 </div>
               </div>
             </main>
