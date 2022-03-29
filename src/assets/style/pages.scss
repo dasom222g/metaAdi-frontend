@@ -49,3 +49,27 @@
     transform: scale(1);
   }
 }
+
+// .custom-shape-divider-top-1648526141 {
+//   position: absolute;
+//   top: 0;
+//   left: 0;
+//   width: 100%;
+//   overflow: hidden;
+//   line-height: 0;
+// }
+
+.custom-shape-divider-top-1648526141 {
+  & > svg {
+    position: relative;
+    display: block;
+    width: 100%;
+    // width: calc(107% + 1.3px);
+    // width: auto;
+    height: 80px;
+    transform: rotateY(180deg);
+  }
+  .shape-fill {
+    fill: #FFFFFF;
+  }
+}
