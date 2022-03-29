@@ -19,9 +19,9 @@ const CardInfo: FC<CardInfo> = ({ info }) => {
           {/* outline style */}
           <span className="block absolute -inset-2 rounded-full border-2 border-indigo-200 transform transition duration-500 delay-100 group hover:rotate-180">
             {/* ping */}
-            <span className="flex h-2 w-2 md:h-4 md:w-4 absolute right-6 top-3 z-10">
+            <span className="flex h-3 w-3 md:h-4 md:w-4 absolute right-6 top-3 z-10">
               <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-indigo-400 opacity-90"></span>
-              <span className="relative inline-flex rounded-full h-2 w-2 md:h-4 md:w-4 bg-white"></span>
+              <span className="relative inline-flex rounded-full h-3 w-3 md:h-4 md:w-4 bg-white"></span>
             </span>
             {/* //ping */}
             {/* info */}
@@ -37,8 +37,15 @@ const CardInfo: FC<CardInfo> = ({ info }) => {
           </span>
         </div>
       </div>
-      <div className="mt-4 text-white text-center">
-        <h3 className="block py-1 text-sm md:text-base font-bold">{info.nickname}</h3>
+      <div className="mt-4 text-white text-center break-words">
+        <div className="py-1 text-sm md:text-base font-bold flex items-center justify-center -mx-1">
+          <h3 className="block pl-1 pr-2">{info.nickname}</h3>
+          <span className="block pr-1 pl-2 relative">
+            {/* <i className="block absolute left-0 w-px h-4/5 top-1/2 transform -translate-y-1/2 bg-white" /> */}
+            <i className="block absolute left-0 w-px top-1 bottom-1 bg-white" />
+            {info.position}
+          </span>
+        </div>
         <span className="block py-1 text-xs md:text-sm font-thin">{info.email}</span>
       </div>
     </div>

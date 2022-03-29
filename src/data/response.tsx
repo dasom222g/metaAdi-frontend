@@ -22,6 +22,7 @@ export const personInfoList: InfoType[] = [
   {
     id: 1,
     nickname: 'Somi',
+    position: 'FrontEnd',
     email: 'dasom228@gmail.com',
     snsList: [
       {
@@ -43,8 +44,9 @@ export const personInfoList: InfoType[] = [
   },
   {
     id: 2,
-    nickname: 'h6442',
-    email: 'dasom228@gmail.com',
+    nickname: 'h662',
+    position: 'Smart Contract',
+    email: 'h662hongsunghyun@gmail.com',
     snsList: [
       {
         id: PlatformCodeEnum.INSTAGRAM,

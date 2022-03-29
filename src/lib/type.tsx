@@ -26,6 +26,7 @@ export interface InfoType {
   id: number
   name?: string
   nickname: string
+  position: string
   email: string
   snsList: SnsType[]
 }

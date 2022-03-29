@@ -12,7 +12,7 @@ const Why: FC = () => {
     <>
       <TitleBox mainTitle={t('main.team_title')} align={'center'} color={'white'} />
       <div className={`${style.contentInterval} max-w-lg mx-auto`}>
-        <div className="flex">
+        <div className="flex -mx-4">
           {personInfoList.map((info) => (
             <CardInfo key={info.id} info={info} />
           ))}
