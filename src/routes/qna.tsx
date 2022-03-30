@@ -7,7 +7,7 @@ const QnA: FC = () => {
   // }
   // view
   return (
-    <div className="h-full">
+    <div>
       <TitleBox mainTitle={'Comming soon'} subTitle={''} align={'center'} color={'white'} />
       {/* <main className="p-5 bg-light-blue">
         <div className="flex justify-center items-start my-2">

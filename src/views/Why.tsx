@@ -17,17 +17,19 @@ const Why: FC = () => {
         color={'white'}
       />
       <div className={`md:flex max-w-3xl mx-auto ${style.contentInterval} -mt-4 md:-mt-6`}>
-        <p className="text-sm font-normal text-white p-2 md:w-3/4 md:min-w-3/4">
+        <p
+          data-aos="fade-right"
+          className="text-sm font-normal text-white p-2 md:w-3/4 md:min-w-3/4">
           {t('main.why_description')}
         </p>
-        <div className="hidden md:block">
-          <ImageCard info={warMainImage} />
+        <div data-aos="fade-left" className="hidden md:block">
+          <ImageCard info={warMainImage} index={0} />
         </div>
       </div>
       <div className={`flex flex-wrap max-w-4xl mx-auto ${style.contentInterval}`}>
-        {warSubImages.map((image) => (
+        {warSubImages.map((image, index) => (
           <div key={image.id} className="w-1/2 md:w-1/4">
-            <ImageCard info={image} />
+            <ImageCard info={image} index={index} />
           </div>
         ))}
       </div>

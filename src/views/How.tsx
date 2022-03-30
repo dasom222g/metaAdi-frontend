@@ -14,7 +14,9 @@ const Why: FC = () => {
       />
       <div className="max-w-lg mx-auto">
         {/* START: 1 step */}
-        <div className="py-8 md:py-14 -mt-8 md:-mt-14 overflow-hidden relative">
+        <div
+          data-aos="zoom-in-up"
+          className="py-8 md:py-14 -mt-8 md:-mt-14 overflow-hidden relative">
           <div className="w-56 md:w-75 bg-aid-purple rounded-xl border border-gray-800 text-white py-2 px-4 relative z-10">
             <div className="flex items-start">
               <span className="text-base font-bold">1.</span>
@@ -60,7 +62,9 @@ const Why: FC = () => {
           </div>
         </div>
         {/* START: 2 step */}
-        <div className="py-8 md:py-14 -mt-8 md:-mt-14 overflow-hidden relative">
+        <div
+          data-aos="zoom-in-up"
+          className="py-8 md:py-14 -mt-8 md:-mt-14 overflow-hidden relative">
           <div className="absolute left-10 md:left-14 top-1/2 transform -scale-x-1 z-0">
             {/* ping */}
             <span className="flex h-3 w-3 md:h-5 md:w-5 absolute -right-1 -top-1">
@@ -106,7 +110,9 @@ const Why: FC = () => {
           </div>
         </div>
         {/* START: 3 step */}
-        <div className="py-8 md:py-14 -mt-8 md:-mt-14 overflow-hidden relative">
+        <div
+          data-aos="zoom-in-up"
+          className="py-8 md:py-14 -mt-8 md:-mt-14 overflow-hidden relative">
           <div className="w-56 md:w-75 bg-aid-purple rounded-xl border border-gray-800 text-white py-2 px-4 relative z-10">
             <div className="flex items-start">
               <span className="text-base font-bold">3.</span>
@@ -152,7 +158,9 @@ const Why: FC = () => {
           </div>
         </div>
         {/* START: 4 step */}
-        <div className="py-8 md:py-14 -mt-8 md:-mt-14 overflow-hidden relative">
+        <div
+          data-aos="zoom-in-up"
+          className="py-8 md:py-14 -mt-8 md:-mt-14 overflow-hidden relative">
           <div className="w-36 md:w-48 bg-gray-400 rounded-full overflow-hidden ml-auto relative z-10">
             <img src="./images/temp/1.png" alt="NFT" />
           </div>

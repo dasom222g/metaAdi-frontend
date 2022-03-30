@@ -7,7 +7,7 @@ import { style } from './../data/style'
 const Wallteconnect: FC = () => {
   const { t } = useTranslation()
   return (
-    <div className="h-full">
+    <div>
       <TitleBox
         mainTitle={t('wallet.connect_wallet')}
         subTitle={t('wallet.connect_with_one')}

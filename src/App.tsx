@@ -1,4 +1,4 @@
-import React, { FC } from 'react'
+import React, { FC, useEffect } from 'react'
 import { BrowserRouter, Routes, Route } from 'react-router-dom'
 import Layout from './components/layout/Layout'
 import Home from './routes/home'
@@ -9,8 +9,21 @@ import QnA from './routes/qna'
 import DonationSuccess from './routes/donation-success'
 import Wallteconnect from './routes/wallet-connect'
 import Profile from './routes/profile'
+import AOS from 'aos'
+import 'aos/dist/aos.css'
 
 const App: FC = () => {
+  useEffect(() => {
+    AOS.init({
+      once: false,
+      delay: 50,
+      duration: 1000,
+      easing: 'ease',
+      mirror: true,
+    })
+    AOS.refresh()
+  }, [])
+
   return (
     <BrowserRouter>
       <Layout>

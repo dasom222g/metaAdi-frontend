@@ -14,14 +14,20 @@ const Hero: FC = () => {
           <div className="relative z-10 py-8 md:pb-20 lg:max-w-2xl lg:w-full lg:py-20">
             <main className="mx-auto max-w-7xl px-4 md:px-8 mt-0">
               <div className="lg:text-left">
-                <h1 className="text-4xl tracking-tight font-extrabold text-white md:text-5xl">
+                <h1
+                  data-aos="fade-up"
+                  className="text-4xl tracking-tight font-extrabold text-white md:text-5xl">
                   <span className="block">{t('hero.main_title_first')}</span>{' '}
                   <span className="block text-aid-blue mt-2">{t('hero.main_title_second')}</span>
                 </h1>
-                <p className="mt-6 text-base text-white md:mt-8 md:text-lg lg:mx-0">
+                <p
+                  data-aos="fade-up"
+                  className="mt-6 text-base text-white md:mt-8 md:text-lg lg:mx-0">
                   {t('hero.sub_title')}
                 </p>
                 <div
+                  data-aos="fade-up"
+                  data-delay="100"
                   className={`md:flex md:justify-center lg:justify-start ${style.buttonOutInterval} ${style.contentInterval}`}>
                   <Button title={t('donation')} handleClick={() => navigate('/donation')} />
                 </div>
@@ -29,7 +35,7 @@ const Hero: FC = () => {
             </main>
           </div>
         </div>
-        <div className="lg:absolute lg:inset-y-0 lg:right-0 lg:w-2/5 lg:mr-3">
+        <div data-aos="fade-left" className="lg:absolute lg:inset-y-0 lg:right-0 lg:w-2/5 lg:mr-3">
           <img
             className="h-72 w-full md:h-96 lg:w-full lg:h-full"
             src="./images/hero_icon.svg"

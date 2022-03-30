@@ -4,7 +4,7 @@ import TitleBox from '../components/TitleBox'
 const Profile: FC = () => {
   // view
   return (
-    <div className="h-full">
+    <div>
       <TitleBox mainTitle={'Comming soon'} subTitle={''} align={'center'} color={'white'} />
     </div>
   )

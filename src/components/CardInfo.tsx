@@ -8,7 +8,7 @@ interface CardInfo {
 
 const CardInfo: FC<CardInfo> = ({ info }) => {
   return (
-    <div className="px-4 w-1/2 md:px-10">
+    <div data-aos="flip-left" className="px-4 w-1/2 md:px-10">
       <div className="py-2">
         <div className="rounded-full bg-aid-blue w-full h-0 pb-full relative">
           <img
