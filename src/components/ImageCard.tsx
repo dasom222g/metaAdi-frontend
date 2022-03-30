@@ -15,7 +15,7 @@ const ImageCard: FC<ImageCardProps> = ({ width, widthMd, info, index }) => {
       data-aos="fade-up"
       data-aos-delay={200 * index}
       className={`p-2 rounded-lg ${width ? 'w-' + width : ''} ${widthMd ? 'md:w-' + widthMd : ''}`}>
-      <div className="rounded-lg overflow-hidden w-full h-0 pb-full relative">
+      <div className="rounded-lg overflow-hidden w-full h-0 pb-full relative shadow-2xl">
         <i className="absolute block inset-0 bg-gray-800 bg-opacity-20" />
         <img
           src={`./images/contents/${fileName}.${fileFormat}`}
