@@ -7,13 +7,13 @@ const enum Align {
 export type AlignType = keyof typeof Align
 
 export const enum Wallet {
-  META_MASK,
-  WALLET_CONNECT,
+  META_MASK = 'META_MASK',
+  WALLET_CONNECT = 'WALLET_CONNECT',
 }
 
 export interface WalletType {
   id: number
-  type: keyof typeof Wallet
+  type: keyof typeof Wallet // META_MASK | WALLET_CONNECT
   title: string
 }
 
