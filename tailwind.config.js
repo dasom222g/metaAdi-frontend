@@ -14,7 +14,8 @@ module.exports = {
     extend: {
       colors: {
         'aid-blue': '#BED5FC',
-        'aid-purple': '#4738BB',
+        // 'aid-purple': '#4738BB',
+        'aid-purple': '#3B3B98',
         'aid-light-purple': '#DCB8FF',
         'aid-yellow': '#F9F871',
         'aid-light-pink': '#F7EBFF',
