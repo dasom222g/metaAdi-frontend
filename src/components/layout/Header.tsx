@@ -1,4 +1,4 @@
-import React, { FC, Fragment, useEffect, useState } from 'react'
+import React, { FC, Fragment, useState } from 'react'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faLanguage } from '@fortawesome/free-solid-svg-icons'
 import { Popover, Transition } from '@headlessui/react'
@@ -25,9 +25,6 @@ const Header: FC = () => {
     { name: t('qna'), link: '/qna' },
   ]
 
-  useEffect(() => {
-    console.log('initLanguage', initLanguage)
-  }, [])
   return (
     <Popover>
       <div className="py-4 px-4 md:py-6 md:px-8 fixed top-0 left-0 right-0 z-20 bg-aid-purple">
