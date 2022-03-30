@@ -161,8 +161,9 @@ const Why: FC = () => {
         <div
           data-aos="zoom-in-up"
           className="py-8 md:py-14 -mt-8 md:-mt-14 overflow-hidden relative">
-          <div className="w-36 md:w-48 bg-gray-400 rounded-full overflow-hidden ml-auto relative z-10">
+          <div className="w-36 md:w-48 rounded-full overflow-hidden ml-auto relative z-10">
             <img src="./images/temp/1.png" alt="NFT" />
+            {/* <img src="./images/contents/nft_gold.png" alt="NFT" /> */}
           </div>
         </div>
       </div>
