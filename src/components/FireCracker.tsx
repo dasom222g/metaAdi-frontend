@@ -20,7 +20,6 @@ export const FireCracker: FC = () => {
   const refAnimationInstance = useRef<CreateTypes | null>(null)
 
   const getInstance = useCallback((instance) => {
-    console.log('instance', typeof instance)
     refAnimationInstance.current = instance
   }, [])
 
