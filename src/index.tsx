@@ -1,19 +1,16 @@
 import React from 'react'
 import ReactDOM from 'react-dom'
-import { MoralisProvider } from 'react-moralis'
 import 'tailwindcss/tailwind.css'
 import App from './App'
 import reportWebVitals from './reportWebVitals'
 import './lang/i18n'
 
-const MORALIS_APPLICATION_ID = process.env.REACT_APP_MORALIS_APPLICATION_ID || ''
-const MORALIS_SERVER_URL = process.env.REACT_APP_MORALIS_SERVER_URL || ''
+// const MORALIS_APPLICATION_ID = process.env.REACT_APP_MORALIS_APPLICATION_ID || ''
+// const MORALIS_SERVER_URL = process.env.REACT_APP_MORALIS_SERVER_URL || ''
 
 ReactDOM.render(
   <React.StrictMode>
-    <MoralisProvider appId={MORALIS_APPLICATION_ID} serverUrl={MORALIS_SERVER_URL}>
-      <App />
-    </MoralisProvider>
+    <App />
   </React.StrictMode>,
   document.getElementById('root'),
 )
