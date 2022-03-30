@@ -17,7 +17,11 @@ const DonationSuccess: FC = () => {
         <SuccessCard />
       </div>
       <div className={`${style.contentInterval} pb-0 md:pb-0 max-w-2xl mx-auto`}>
-        <CardNFT type={CardStateType.view} />
+        <CardNFT
+          type={CardStateType.view}
+          dataFormat={'image'}
+          dataSource={'./images/temp/1.png'}
+        />
         <p className="title tracking-tight font-black text-sm md:text-base py-2 text-center text-white md:py-4">
           Your NFT #1234
         </p>

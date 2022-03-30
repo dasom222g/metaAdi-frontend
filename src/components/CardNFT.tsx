@@ -4,16 +4,33 @@ import { CardStateType } from '../lib/type'
 
 interface CardNFT {
   type: CardStateType
+  dataFormat: string
+  dataSource: string
 }
 
-const CardNFT: FC<CardNFT> = ({ type }) => {
+const CardNFT: FC<CardNFT> = ({ type, dataFormat, dataSource }) => {
   const { t } = useTranslation()
   const ethereumBg = { backgroundImage: 'url(/images/ethereum.svg)' }
   return (
     <div className={`p-1 md:p-2 w-1/2 ${type === CardStateType.view ? 'mx-auto' : ''}`}>
       <div className="block bg-gray-800 rounded-lg overflow-hidden shadow-2xl transform hover:-translate-y-2 transition duration-300">
         <div className="w-full pb-full h-0">
-          <img src="./images/temp/1.png" alt="NFT" />
+          {dataFormat === 'image' ? (
+            // <img src="./images/temp/1.png" alt="NFT" />
+            <img src={dataSource} alt="NFT" />
+          ) : (
+            <>
+              <div className="relative z-30 p-5 text-2xl text-white bg-purple-300 bg-opacity-50 rounded-xl"></div>
+              <video
+                autoPlay
+                loop
+                muted
+                className="absolute z-10 w-auto min-w-full min-h-full max-w-none">
+                <source src={dataSource} type="video/mp4" />
+                Your browser does not support the video tag.
+              </video>
+            </>
+          )}
         </div>
         <div className="p-2 text-xs">
           <p className="text-gray-400 py-1">AAA Collection</p>

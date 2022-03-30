@@ -26,8 +26,16 @@ const Donation: FC = () => {
       </div>
       <div className={`${style.contentInterval}`}>
         <div className="flex flex-wrap -mx-1">
-          <CardNFT type={CardStateType.sales} />
-          <CardNFT type={CardStateType.sales} />
+          <CardNFT
+            type={CardStateType.sales}
+            dataFormat={'image'}
+            dataSource={'./images/temp/1.png'}
+          />
+          <CardNFT
+            type={CardStateType.sales}
+            dataFormat={'image'}
+            dataSource={'./images/temp/1.png'}
+          />
         </div>
       </div>
     </div>
