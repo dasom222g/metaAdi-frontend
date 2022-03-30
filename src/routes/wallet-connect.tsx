@@ -14,10 +14,10 @@ const Wallteconnect: FC = () => {
         align={'center'}
         color={'white'}
       />
-      <div className={`${style.contentInterval}`}>
+      <div data-aos="fade-up" data-aos-delay="300" className={`${style.contentInterval}`}>
         <img className="max-h-52 md:max-h-60 mx-auto" src="./images/wallet.svg" alt="wallet" />
       </div>
-      <div className={`${style.contentInterval}`}>
+      <div data-aos="fade-up" data-aos-delay="400" className={`${style.contentInterval}`}>
         <WalletBox />
       </div>
     </div>

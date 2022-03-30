@@ -27,7 +27,7 @@ const Hero: FC = () => {
                 </p>
                 <div
                   data-aos="fade-up"
-                  data-delay="100"
+                  data-aos-delay="100"
                   className={`md:flex md:justify-center lg:justify-start ${style.buttonOutInterval} ${style.contentInterval}`}>
                   <Button title={t('donation')} handleClick={() => navigate('/donation')} />
                 </div>

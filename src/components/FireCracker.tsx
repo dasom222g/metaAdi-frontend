@@ -71,7 +71,7 @@ export const FireCracker: FC = () => {
   useEffect(() => {
     setTimeout(() => {
       fire()
-    }, 500)
+    }, 1500)
   }, [fire])
 
   // view

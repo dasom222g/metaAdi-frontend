@@ -13,10 +13,13 @@ const DonationSuccess: FC = () => {
   return (
     <div className="pt-4 md:pt-6">
       <FireCracker />
-      <div className={`max-w-2xl mx-auto ${style.contentInterval}`}>
+      <div data-aos="fade-up" className={`max-w-2xl mx-auto ${style.contentInterval}`}>
         <SuccessCard />
       </div>
-      <div className={`${style.contentInterval} pb-0 md:pb-0 max-w-2xl mx-auto`}>
+      <div
+        data-aos="fade-up"
+        data-aos-delay="200"
+        className={`${style.contentInterval} pb-0 md:pb-0 max-w-2xl mx-auto`}>
         <CardNFT
           type={CardStateType.view}
           dataFormat={'image'}
@@ -26,7 +29,10 @@ const DonationSuccess: FC = () => {
           Your NFT #1234
         </p>
       </div>
-      <div className={`${style.contentInterval} text-center`}>
+      <div
+        data-aos="fade-up"
+        data-aos-delay="300"
+        className={`${style.contentInterval} text-center`}>
         <Share title={t('donation.sns_title')} hashtag={t('donation.sns_hashtag')} />
       </div>
       {/* <div className={`${style.contentInterval} pt-0 md:pt-0 max-w-2xl mx-auto`}>
@@ -35,7 +41,10 @@ const DonationSuccess: FC = () => {
           Your NFT #1234
         </p>
       </div> */}
-      <div className={`${style.contentInterval} ${style.buttonOutInterval} flex justify-center`}>
+      <div
+        data-aos="zoom-in"
+        data-aos-delay="400"
+        className={`${style.contentInterval} ${style.buttonOutInterval} flex justify-center`}>
         <Button title={t('button.home')} />
         <Button title={t('button.check_nft')} />
       </div>
